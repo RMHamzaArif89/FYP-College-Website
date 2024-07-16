@@ -10,12 +10,17 @@ import {
 
 } from "react-router-dom";
 
+
+import Layout from './Pages/Layout.jsx';
+import Home from './Pages/Home.jsx'
+
+
 const router = createBrowserRouter(
   createRoutesFromElements(
   <Route element={<Layout/>}>
    
      
-        {/* <Route path="/" index element={<Home />} /> */}
+        <Route path="/" index element={<Home />} />
  
 
 

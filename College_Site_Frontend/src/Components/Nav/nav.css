@@ -4,6 +4,7 @@
     display: flex;
     padding: 0.5rem 2rem;
     background: #5b1d1d;
+    justify-content: space-between;
 
 }
 
@@ -109,7 +110,31 @@
 }
 
 
-
+.nav-btn{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.nav-btn .navBtnImg{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .6s linear;
+    transform: scale(0.9);
+    animation: scale 1s 1s forwards infinite;
+    
+   
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
 
 
 
@@ -123,13 +148,22 @@
     width: 250px;
     height: 755px;
     z-index: 5;
-    
+    position: absolute;
+    top: 3.4rem;
+    left: 0;
     position: fixed;
-    background: linear-gradient(180deg,gold,rgb(7, 202, 228));
+    background: linear-gradient(140deg,#3d0602,#440b16);
     
     animation: slide 0.8s;
     animation-delay: 0s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
     display: none;
+    animation-fill-mode: both;
+
+
 
 }
 
@@ -138,12 +172,51 @@
         left: -250px;
         opacity: 0;
     }
+    50%{
+    
+        opacity: 0.6;
+    }
 
     100% {
         left: 0%;
         opacity: 1;
     }
 }
+.nav-side a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 8px;
+    }
+  
+  
+  }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and  (max-width:768px) and (min-width:200px) {
+        .nav-btn{
+            display: flex;
+        }
+       .nav-links{
+        display: none;
+       }
+       .nav-side{
+        display: block;
+       }
+       
+    
+    
+    
+    }
+    
 
 
 
