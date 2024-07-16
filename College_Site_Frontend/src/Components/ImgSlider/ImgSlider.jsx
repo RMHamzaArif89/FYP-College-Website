@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Data from './imgSliderData'
 import { FaChevronLeft } from "react-icons/fa6";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa6";
 
 import { GoDot } from "react-icons/go";
 import ImgCon from './ImgCon';
@@ -34,7 +34,7 @@ function ImgSlider() {
     }
 
     let changeSlide = () => {
-        if (val == data.length-1) {
+        if (val == data.length - 1) {
             setVal(0)
         } else {
             setVal(val + 1)
@@ -46,7 +46,8 @@ function ImgSlider() {
     useEffect(() => {
         setTimeout(() => {
             changeSlide()
-        }, 9000)
+        }, 10000)
+       
 
 
     })
