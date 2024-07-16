@@ -12,7 +12,7 @@ import {
 
 
 import Layout from './Pages/Layout.jsx';
-import Home from './Pages/Home.jsx'
+import Home from './Pages/Home/Home';
 
 
 const router = createBrowserRouter(
