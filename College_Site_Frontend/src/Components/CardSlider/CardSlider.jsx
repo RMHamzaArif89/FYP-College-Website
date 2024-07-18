@@ -18,9 +18,15 @@ function CardSlider() {
   return (
 
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
+      <h1 className="eventHeading">
+        Events
+      </h1>
       <Swiper
         effect={'coverflow'}
+        autoplay={{
+          delay: 100,
+          // disableOnInteraction: false
+      }}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
@@ -29,7 +35,7 @@ function CardSlider() {
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 2.8,
+          modifier: 3,
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{
@@ -45,9 +51,11 @@ function CardSlider() {
           return(
             <SwiperSlide className='swiper-slide'>
               <img src="" alt="" className='eventImg'/>
-              <div className="eventTitle">{event.title}</div>
+             <div className="eventText">
+             <div className="eventTitle">{event.title}</div>
               <div className="eventDate">{event.date}</div>
               <div className="evnetDescription">{event.description}</div>
+             </div>
 
             </SwiperSlide>
           )

@@ -1,0 +1,62 @@
+.intro{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    min-height:400px;
+    max-height: auto; 
+    padding: 3rem 0;
+   
+}
+.introText{
+    width: 50%;
+    height: 100%;
+    
+    
+}
+.introHeading{
+    font-size: 3.2rem;
+    color: darkred;
+    text-align: justify;
+    font-weight: bolder;
+    
+    
+}
+.introPara{
+    font-size: 1.4rem;
+    color: rgb(136, 134, 134);
+    font-family: serif;
+    line-height: 2.1rem;
+    text-align:justify;
+    margin: 0.8rem 0;
+}
+.introVideo{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+}
+.introVideo video{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:968px) and (min-width:200px) {
+    .intro{
+        flex-direction: column;
+    }
+    .introText{
+        width: 100%;
+        padding: 0;
+       
+    }
+    .introHeading{
+        font-size: 3.8rem;
+    }
+    .introPara{
+        font-size: 1.8rem;
+    }
+    .introVideo{
+        width: 100%;
+        padding:3rem;
+    }
+    
+}
