@@ -63,7 +63,7 @@ function ImgSlider() {
             <div className="pagin">
                 {
                     data.map((_, ind) => {
-                        return <li key={ind} className='sliderDot' onClick={() => { clickFunc(ind) }} style={{ backgroundColor: val == ind && 'black' }}> </li>
+                        return <li key={ind} className='sliderDot' onClick={() => { clickFunc(ind) }} style={{ backgroundColor: val == ind && 'darkred' }}> </li>
                     })
                 }
             </div>
