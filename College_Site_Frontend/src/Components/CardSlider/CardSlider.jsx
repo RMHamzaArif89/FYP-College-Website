@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './cardSlider.css'
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import {Autoplay, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 
 
@@ -24,7 +24,9 @@ function CardSlider() {
       <Swiper
         effect={'coverflow'}
         autoplay={{
-          delay: 100,
+          delay: 2000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false
           // disableOnInteraction: false
       }}
         grabCursor={true}
@@ -43,7 +45,7 @@ function CardSlider() {
           prevEl: '.swiper-button-prev',
           clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[Autoplay,EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
       {

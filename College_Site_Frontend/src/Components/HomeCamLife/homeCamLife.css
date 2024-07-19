@@ -1,0 +1,16 @@
+.homeCamLife{
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+}
+.homeCamLife h1{
+    font-size: 3.4rem;
+    color: darkred;
+    text-align: justify;
+}
+.homeCamLife .homeCamLifeDes{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: darkgray;
+    padding: 1rem 0;
+}

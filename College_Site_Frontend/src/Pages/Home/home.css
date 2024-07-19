@@ -2,3 +2,35 @@
     width: 100%;
     height:auto;
 }
+.campusDet{
+    width: 90%;
+    margin: 0 auto;
+    min-height:440px;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+ 
+}
+
+@media (max-width:968px) and (min-width:200px) {
+    .campusDet{
+        flex-direction: column;
+    }
+    .homeCamLife{
+        width: 100%;
+        padding: 0;
+       
+    }
+    .homeCamLife h1{
+        font-size: 3.8rem;
+    }
+    .homeCamLifeDes{
+        font-size: 1.8rem;
+    }
+    .homeGallery{
+        width: 100%;
+        padding:3rem;
+    }
+    
+}
