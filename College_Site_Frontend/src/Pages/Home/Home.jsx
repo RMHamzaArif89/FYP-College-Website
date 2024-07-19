@@ -4,6 +4,7 @@ import CardSlider from '../../Components/HomeCardSlider/CardSlider'
 import Intro from '../../Components/HomePageIntro/Intro'
 import HomeGallery from '../../Components/HomeGallery/HomeGallery'
 import HomeCamLife from '../../Components/HomeCamLife/HomeCamLife'
+import LinksCards from '../../Components/HomeLinksCards/LinksCards'
 import './home.css'
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
         <HomeCamLife />
         <HomeGallery />
       </div>
+      <LinksCards/>
 
     </div>
   )

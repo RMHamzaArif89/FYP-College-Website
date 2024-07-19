@@ -1,0 +1,78 @@
+.linksCards{
+    width: 90%;
+    min-height: 280px;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.linksCards .linksCard{
+    width: 18rem;
+    height: 13rem;
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    gap: 1.5rem;
+    box-shadow: 0 0 8px inset rgba(93, 93, 93, 0.8);
+}
+.linksCard:hover{
+    box-shadow: 0 0 8px inset rgba(69, 2, 2, 0.977);
+    background: rgba(87, 3, 3, 0.428);
+}
+.linksCard .linksTitle{
+    width: 80%;
+    padding: 0.5rem 0.3rem;
+    background:darkred;
+    border-radius: 8px;
+    border-right: 25px solid rgb(137, 138, 137);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: -2rem;
+    bottom: 0;
+
+
+}
+@keyframes title {
+    0%{
+        left: -2rem;
+    }
+    100%{
+        left: 0rem;
+    }
+    
+}
+.linksCard .linksTitle:hover{
+    left: 0;
+    cursor: pointer;
+    background: gray;
+    animation: title 0.7s;
+    /* animation-delay: 0.1s; */
+    animation-fill-mode: forwards;
+}
+.linksCard .linksCardImg{
+    width: 3.2rem;
+    height: 3.2rem;
+
+}
+.linksCard .linksDes{
+    font-size: 1.2rem;
+    color:darkred;
+    text-align: justify;
+}
+
+
+@media (max-width:968px) and (min-width:200px) {
+    .linksCards{
+        flex-direction: column;
+        width: 90%;
+        gap: 2rem;
+    }
+}
