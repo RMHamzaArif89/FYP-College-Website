@@ -24,7 +24,7 @@ function CardSlider() {
       <Swiper
         effect={'coverflow'}
         autoplay={{
-          delay: 2000,
+          delay: 1500,
           pauseOnMouseEnter: true,
           disableOnInteraction: false
           // disableOnInteraction: false

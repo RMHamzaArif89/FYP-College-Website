@@ -11,11 +11,11 @@ function Home() {
     <div className='home'>
       <ImgSlider />
       <Intro />
+      <CardSlider />
       <div className="campusDet">
         <HomeCamLife />
         <HomeGallery />
       </div>
-      <CardSlider />
 
     </div>
   )
