@@ -93,8 +93,13 @@
 .col2 li{
     list-style: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
+}
+.col2 li:hover{
+    color: lightcoral;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(18, 17, 17);
 }
 .footer-col3{
     width: 20%;
@@ -141,6 +146,7 @@
 
 @media (max-width:968px) and (min-width:200px) {
     .footer{
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
