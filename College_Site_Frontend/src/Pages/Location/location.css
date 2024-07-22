@@ -1,0 +1,16 @@
+.location{
+    width: 100%;
+    height: calc(100vh - 3.8rem);
+    background-image: linear-gradient( rgba(88, 9, 9, 0.329), rgba(118, 8, 8, 0.311) ), url('/images/imgSlider1.jpg');
+background-position: center;
+background-size: 100% 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+    
+}
+.location .locationContainer{
+    width: 70%;
+    height: 70%;
+    border: 1px solid blue;
+}

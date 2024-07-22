@@ -4,6 +4,7 @@
     display: flex;
     background: darkred;
     padding: 1rem 3rem;
+    border-top: 1px solid lightgray;
 }
 .footer-col1{
     width: 20%;

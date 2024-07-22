@@ -20,7 +20,6 @@ function Home() {
         <HomeGallery />
       </div>
       <LinksCards/>
-      <Footer/>
     
     </div>
   )

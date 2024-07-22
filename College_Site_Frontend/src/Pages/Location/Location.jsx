@@ -3,8 +3,10 @@ import './location.css'
 
 function Location() {
   return (
-    <div>
-      
+    <div className='location'>
+      <div className="locationContainer">
+        
+      </div>
     </div>
   )
 }
