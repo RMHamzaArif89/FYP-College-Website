@@ -1,0 +1,12 @@
+.quickFacts{
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 3.8rem);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient( rgba(88, 9, 9, 0.329), rgba(118, 8, 8, 0.311) ), url('/images/quickLinksImg.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+}
