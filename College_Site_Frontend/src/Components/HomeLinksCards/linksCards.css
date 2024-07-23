@@ -37,7 +37,7 @@
     position: absolute;
     left: -2rem;
     bottom: 0;
-
+    text-decoration:none;
 
 }
 @keyframes title {

@@ -1,6 +1,7 @@
 import React from 'react'
 import './linksCards.css'
 import LinksData from './LinksCardsData'
+import {Link, NavLink} from 'react-router-dom'
 
 function LinksCards() {
     return (
@@ -11,7 +12,7 @@ function LinksCards() {
                         <div className="linksCard">
                             <img src={data.img} alt="" className="linksCardImg" />
                             <div className="linksDes">{data.description}</div>
-                            <div className="linksTitle">{data.title}</div>
+                            <Link className="linksTitle" to={data.path}>{data.title}</Link>
                         </div>
                     )
                 })

@@ -1,0 +1,29 @@
+.sports{
+    width: 100%;
+    height: calc(100vh - 3.8rem);
+    background:darkred;
+    background-image: linear-gradient( rgba(88, 9, 9, 0.287), rgba(118, 8, 8, 0.282) ), url('/images/sportsPage.png');
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 3rem;
+    flex-direction:column; 
+  
+}
+.sportsHeading{
+    font-size: 3.4rem;
+    color: white;
+    font-weight: bolder;
+
+}
+.sportsHeading2{
+    font-size: 2.6rem;
+    color: lightcoral;
+}
+.sportsText{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}

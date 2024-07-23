@@ -15,6 +15,9 @@ import Layout from './Pages/Layout.jsx';
 import Home from './Pages/Home/Home';
 import Location from './Pages/Location/Location';
 import QuickFacts from './Pages/QuickFacts/QuickFacts';
+import Sports from './Pages/Sports/Sports';
+// import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +27,9 @@ const router = createBrowserRouter(
         <Route path="/" index element={<Home />} />
         <Route path='/location' element={<Location/>}/>
         <Route path='/quickFacts' element={<QuickFacts/>} />
+        <Route path='/sports' element={<Sports/>} />
+        {/* <Route path='/admissionProcess' element={<AdmissionProcess/>} /> */}
+
 
 
   </Route>  
