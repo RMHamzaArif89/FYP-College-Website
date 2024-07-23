@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { SportsCubeData } from './sportsData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cube';
@@ -23,6 +23,17 @@ function Sports() {
         modules={[EffectCube, Pagination]}
         className="mySwiper"
       >
+        {
+          SportsCubeData.map((data)=>{
+            return(
+              <SwiperSlide className='cubeImg' style={{backgroundImage:`${data.img}`}}>
+
+                <div className="cubeHeading">{data.heading}</div>
+                <div className="cubeText">{data.text}</div>
+              </SwiperSlide>
+            )
+          })
+        }
   
       </Swiper>
     </div>
