@@ -6,6 +6,7 @@ function Location() {
     <div className='location'>
       <div className="locationContainer">
         
+        
       </div>
     </div>
   )
