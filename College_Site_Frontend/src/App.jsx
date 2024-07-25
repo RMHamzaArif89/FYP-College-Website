@@ -16,34 +16,42 @@ import Home from './Pages/Home/Home';
 import Location from './Pages/Location/Location';
 import QuickFacts from './Pages/QuickFacts/QuickFacts';
 import Sports from './Pages/Sports/Sports';
+import History from './Pages/History/History'
+import Programs from './Pages/Programs/Programs';
+// sub pages of Programs
+import BS from './Pages/Programs/BS'
+import Inter from './Pages/Programs/Inter';
 // import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-  <Route element={<Layout/>}>
-   
-     
-        <Route path="/" index element={<Home />} />
-        <Route path='/location' element={<Location/>}/>
-        <Route path='/quickFacts' element={<QuickFacts/>} />
-        <Route path='/sports' element={<Sports/>} />
-        {/* <Route path='/admissionProcess' element={<AdmissionProcess/>} /> */}
+    <Route element={<Layout />}>
 
 
+      <Route path="/" index element={<Home />} />
+      <Route path='/location' element={<Location />} />
+      <Route path='/quickFacts' element={<QuickFacts />} />
+      <Route path='/sports' element={<Sports />} />
+      <Route path='/history' element={<History />} />
+      <Route path='/programs' element={<Programs />}>
+        <Route path='/programs/bs' element={<BS />} />
+        <Route path='/programs/inter' element={<Inter />} />
+      </Route>
 
-  </Route>  
-));
 
-function App() {
+    </Route>
+      ));
+
+      function App() {
   
 
 
   return (
-   <>
-   <RouterProvider router={router}/>
-   </>
-  )
+      <>
+        <RouterProvider router={router} />
+      </>
+      )
 }
 
-export default App
+      export default App

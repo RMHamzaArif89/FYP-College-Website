@@ -93,9 +93,12 @@
 }
 .col2 li{
     list-style: none;
+
+}
+.col2 li a{
     color: white;
     font-size: 1.2rem;
-
+    text-decoration: none;
 }
 .col2 li:hover{
     color: lightcoral;

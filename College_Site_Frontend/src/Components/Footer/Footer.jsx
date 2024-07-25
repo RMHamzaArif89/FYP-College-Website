@@ -9,6 +9,7 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
+import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className='footer'>
@@ -38,7 +39,7 @@ function Footer() {
           <li>Fee Structure</li>
           <li>BS Programs</li>
           <li>Exam News</li>
-          <li>Course Outline</li>
+          <li><Link to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</Link></li>
         </div>
       </div>
       <div className="footer-col3">

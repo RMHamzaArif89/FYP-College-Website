@@ -1,0 +1,87 @@
+.programs{
+    width: 100%;
+    height: auto;
+    
+}
+.programsContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+.programsContainer .programsNavSections{
+    width: 80%;
+    height: 4.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.programsNavSections a{
+    text-decoration: none;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 6px;
+    background: darkred;
+    color: white;
+
+}
+
+.programsContainer .programsNavSections a.active{
+    background: darkgray;
+}
+
+.programsContainer .programsBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.programsBox .programsBoxData{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    
+}
+.searchProgram{
+    width: 40%;
+    padding:.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: darkred;
+    outline: none;
+    border: 1px solid darkred;
+}
+.programsCard{
+    width: 16rem;
+    height: 14rem;
+    border-radius: 3px;
+    background: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    position: relative;
+    flex-direction: column;
+}
+.programsCard .programsTitle{
+    font-size: 2rem;
+    color: white;
+}
+.bsProgramsCard .programsImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.programsProgramsCard .programsDes{
+    font-size: 1.2rem;
+    color: lightgray;
+    text-align: center;
+}
