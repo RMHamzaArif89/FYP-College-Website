@@ -13,7 +13,7 @@ justify-content: center;
     width: 70%;
     height: 70%;
     border: 1px solid blue;
-    background: darkred;
+    background: lightgray;
 }
 .locationContainer iframe{
     width: 100%;

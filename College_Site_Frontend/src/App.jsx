@@ -22,6 +22,7 @@ import Programs from './Pages/Programs/Programs';
 import BS from './Pages/Programs/BS'
 import Inter from './Pages/Programs/Inter';
 // import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
+import Contact from './Pages/Contact/Contact'
 
 
 const router = createBrowserRouter(
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
         <Route path='/programs/bs'  index element={<BS />}/>
         <Route path='/programs/inter' element={<Inter />} />
       </Route>
+      <Route path='/contact' element={<Contact/>}/>
 
 
     </Route>
