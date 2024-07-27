@@ -35,7 +35,8 @@ const router = createBrowserRouter(
       <Route path='/sports' element={<Sports />} />
       <Route path='/history' element={<History />} />
       <Route path='/programs' element={<Programs />}>
-        <Route path='/programs/bs' element={<BS />} />
+        <Route path='/programs/'  index element={<BS />}/>
+        <Route path='/programs/bs'  index element={<BS />}/>
         <Route path='/programs/inter' element={<Inter />} />
       </Route>
 
