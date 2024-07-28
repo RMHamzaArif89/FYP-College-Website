@@ -38,7 +38,7 @@ function Footer() {
         <div className="col22 col2">
           <li>Fee Structure</li>
           <li><Link to='/programs'>Programs</Link></li>
-          <li>Exam News</li>
+          <li><Link to="/examNews">Exam News</Link></li>
           <li><Link to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</Link></li>
         </div>
       </div>

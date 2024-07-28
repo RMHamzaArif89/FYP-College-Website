@@ -14,23 +14,118 @@
     max-height: auto;
     display: flex;
     flex-wrap:wrap;
-    
+    gap: 2rem;
 }
+
+
+
 .examCard{
     width: 40%;
     height: 14rem;
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background: lightblue;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    background:white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(106, 102, 102, 0.12) 0px 4px 6px, rgba(111, 109, 109, 0.17) 0px 12px rgba(111, 108, 108, 0.09) 0px -3px 5px;
 }
+.examCard:nth-child(2){
+    width: 55%;
+   
+}
+.examCard:nth-child(3){
+    width: 55%;
+    
+}
+.examCard .semesterHeading{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: darkred;
+
+}
+
+.examCard .semesterDes{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.examCardDate .examDate{
+    font-size: 2.1rem;
+    color: darkred;
+}
+.examCardDate .examCardH5{
+    font-size: 1.8rem;
+    color: darkred;
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+
+.examSelectedCon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(240deg,rgba(177, 211, 222, 0.439),rgba(211, 211, 211, 0.388));
+        
+}
+
 .examCardSelected{
-    width: 18rem;
-    height: 20rem;
-    background: red;
-   position: absolute;
-   transform: translate(-50%,-50%);
-   left: 50%;
-   top: 50%;
+    width: 22rem;
+    height: 25rem;
+    background: darkred;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.examCardSelected .examCardSelectedH2{
+    font-size: 2.6rem;
+    display: flex;
+    gap: .8rem;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+.examCardSelectedDate{
+    padding: .4rem;
+    text-align: left;
+}
+.examDate{
+    text-align: left;
+    font-size: 1.4rem;
+    color:white;
+}
+.examCardSelected .examCardSelectedH5{
+    font-size: 2rem;
+    display: flex;
+    gap: .8rem;
+    color: white;
+    align-items: center;
+
+}
+.examCardSelected .examCardSelectedDes{
+    font-size: 1.2rem;
+    color: lightgray;
+    text-align: left;
+    font-weight: bold;
+}
+.selectedItem img{
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: cover;
 }

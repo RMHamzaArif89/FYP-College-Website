@@ -5,6 +5,8 @@ import ContactInfo from '../../Components/contactInfo/ContactInfo'
 
 function Contact() {
   const [showInfo,setShowInfo]=useState(false)
+
+
   return (
     <div className='contact'>
       {
