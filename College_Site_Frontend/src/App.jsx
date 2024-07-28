@@ -23,6 +23,7 @@ import BS from './Pages/Programs/BS'
 import Inter from './Pages/Programs/Inter';
 // import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
 import Contact from './Pages/Contact/Contact'
+import ExamNews from './Pages/ExamNews/ExamNews';
 
 
 const router = createBrowserRouter(
@@ -41,6 +42,8 @@ const router = createBrowserRouter(
         <Route path='/programs/inter' element={<Inter />} />
       </Route>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/examNews' element={<ExamNews/>}/>
+      
 
 
     </Route>

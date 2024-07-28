@@ -12,4 +12,25 @@
     width: 80%;
     min-height: 100%;
     max-height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.examCard{
+    width: 40%;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: lightblue;
+}
+.examCardSelected{
+    width: 18rem;
+    height: 20rem;
+    background: red;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   top: 50%;
 }
