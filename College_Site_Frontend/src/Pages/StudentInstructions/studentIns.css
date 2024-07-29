@@ -6,6 +6,7 @@
     align-items: center;
     background: darkred;
     flex-direction: column;
+    position: relative;
 
 }
 .studentInsBox{
@@ -65,4 +66,13 @@
     margin: 1rem;
     word-spacing: 1px;
     word-spacing: 4px;
+}
+
+.noteCon{
+    position: absolute;
+    right: .8rem;
+    top: 50vh;
+    background:lightgray;
+    padding: 1.2rem;
+    border-radius: 8px;
 }

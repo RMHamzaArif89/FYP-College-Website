@@ -33,7 +33,7 @@ function Footer() {
           <li>Contact</li>
           <li>Complain Box</li>
           <li>Gallery</li>
-          <li>Student Life</li>
+          <li><Link to={'/studentIns'}>Student Instrucitons</Link></li>
         </div>
         <div className="col22 col2">
           <li>Fee Structure</li>
