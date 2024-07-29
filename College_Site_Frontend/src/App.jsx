@@ -24,6 +24,7 @@ import Inter from './Pages/Programs/Inter';
 // import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
 import Contact from './Pages/Contact/Contact'
 import ExamNews from './Pages/ExamNews/ExamNews';
+import RAI from './Pages/RulesAndInstruction/RAI';
 
 
 const router = createBrowserRouter(
@@ -43,6 +44,7 @@ const router = createBrowserRouter(
       </Route>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/examNews' element={<ExamNews/>}/>
+      <Route path='/rules' element={<RAI/>}/>
       
 
 

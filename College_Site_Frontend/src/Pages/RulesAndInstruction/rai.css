@@ -1,0 +1,44 @@
+.rulesCon{
+    width: 100%;
+    padding: 3rem 5rem;
+    min-height:calc(100vh - 3.8rem) ;
+    max-height: auto;
+    background: darkred;
+    line-height: 2.4rem;
+    
+}
+.rulesCon .rulesHeading{
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+    line-height: 2.8rem;
+    padding: 0.8rem;
+    background:#411616;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.rulesDetails{
+    font-size: 1.3rem;
+    color:lightcoral;
+    letter-spacing: 0.60px;
+
+}
+.rulesPoints{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.3rem;
+    color: lightblue;
+    word-spacing: 1.4px;
+}
+.rulesPoints img{
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: cover;
+}
+ 
