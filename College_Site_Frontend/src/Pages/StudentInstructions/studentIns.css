@@ -1,0 +1,68 @@
+.studentIns{
+    width: 100%;
+    min-height:calc(100vh - 3.8rem);
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: darkred;
+    flex-direction: column;
+
+}
+.studentInsBox{
+    width: 70%;
+    height: auto;
+    padding: 2rem 0;
+}
+.studentInsHeading{
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.studentInsHeading img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.studentInsText{
+    font-size: 1.8rem;
+    color: rgb(216, 155, 155);
+}
+.studentInsCon{
+    width: 85%;
+    min-height: 80%;
+    /* max-height: auto; */
+    border-radius: 12px;
+  
+}
+.insConHeading{
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    gap: 0.6rem;
+    background: rgb(81, 6, 6);
+    display: inline-block;
+    padding: 0.4rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+.insConSubHeading{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+
+}
+.insConIcon{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.insConText{
+    font-size: 1.4rem;
+    color: rgb(216, 155, 155);
+    margin: 1rem;
+    word-spacing: 1px;
+    word-spacing: 4px;
+}
