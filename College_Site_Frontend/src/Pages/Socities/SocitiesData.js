@@ -49,3 +49,28 @@ const SocitiesData=[
     }
 ]
 export {SocitiesData};
+
+
+const SocitiesCubeData=[
+    {
+        heading:'heading',
+        text:'text text rejfkld djk jd',
+        img:'/images/sportsPage.jpg'
+    },
+    {
+        heading:'heading',
+        text:'text text rejfkld djk jd',
+        img:'/images/sportsPage.jpg'
+    },
+    {
+        heading:'heading',
+        text:'text text rejfkld djk jd',
+        img:'/images/sportsPage.jpg'
+    },
+    {
+        heading:'heading',
+        text:'text text rejfkld djk jd',
+        img:'/images/logo.jpg'
+    },
+]
+export {SocitiesCubeData}
