@@ -30,13 +30,13 @@ function Footer() {
       </div>
       <div className="footer-col2">
         <div className="col21 col2">
-          <li>Contact</li>
-          <li>Complain Box</li>
-          <li>Gallery</li>
+          <li><Link to={'/contact'}>Contact</Link></li>
+          <li><Link to={'/feeStructure'}>Fee Structure</Link></li>
+          <li><Link to={'/rules'}>Rules & Regulations</Link></li>
           <li><Link to={'/studentIns'}>Student Instrucitons</Link></li>
         </div>
         <div className="col22 col2">
-          <li>Fee Structure</li>
+          <li>Complain Box</li>
           <li><Link to='/programs'>Programs</Link></li>
           <li><Link to="/examNews">Exam News</Link></li>
           <li><Link to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</Link></li>
