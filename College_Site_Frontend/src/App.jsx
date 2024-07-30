@@ -27,6 +27,7 @@ import ExamNews from './Pages/ExamNews/ExamNews';
 import RAI from './Pages/RulesAndInstruction/RAI';
 import StudentIns from './Pages/StudentInstructions/StudentIns';
 import FeeStructure from './Pages/FeeStructure/FeeStructure';
+import Socities from './Pages/Socities/Socities';
 
 
 const router = createBrowserRouter(
@@ -49,6 +50,8 @@ const router = createBrowserRouter(
       <Route path='/rules' element={<RAI/>}/>
       <Route path='/studentIns' element={<StudentIns/>}/>
       <Route path='/feeStructure' element={<FeeStructure/>}/>
+      <Route path='/socities' element={<Socities/>}/>
+      
       
 
 
