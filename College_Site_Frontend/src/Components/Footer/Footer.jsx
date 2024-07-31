@@ -34,6 +34,7 @@ function Footer() {
           <li><Link to={'/feeStructure'}>Fee Structure</Link></li>
           <li><Link to={'/rules'}>Rules & Regulations</Link></li>
           <li><Link to={'/studentIns'}>Student Instrucitons</Link></li>
+          <li><Link to={'/admissionProcess'}>Admission Process</Link></li>
         </div>
         <div className="col22 col2">
           <li>Complain Box</li>

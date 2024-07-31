@@ -80,7 +80,7 @@ strong {
   }
   
   tr:nth-child(odd) td {
-background: rgb(211, 209, 209);; 
+background: rgb(211, 209, 209);
   }
   
   tr:last-of-type td {
@@ -98,10 +98,14 @@ background: rgb(211, 209, 209);;
   tbody:hover td {
     color: transparent;
     text-shadow: 0 0 3px #aaa;
+    
   }
   
   tbody:hover tr:hover td {
     color: black;
     transform: scale(1.1);
     text-shadow: 0 1px 0 #fff;
+    border-color: white;
+    background: white;
+    cursor: pointer;
   }
