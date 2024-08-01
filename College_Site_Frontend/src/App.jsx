@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import './App.css'
 import * as ReactDOM from "react-dom/client";
 import {
@@ -61,12 +61,11 @@ const router = createBrowserRouter(
       ));
 
       function App() {
-  
 
 
   return (
       <>
-        <RouterProvider router={router} />
+        <RouterProvider  router={router}/>
       </>
       )
 }

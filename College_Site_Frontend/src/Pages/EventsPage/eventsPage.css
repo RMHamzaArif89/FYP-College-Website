@@ -1,0 +1,9 @@
+.eventsPage{
+    width:100%;
+    min-height: calc(100vh - 3.4rem);
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}

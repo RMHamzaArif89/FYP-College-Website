@@ -9,7 +9,7 @@ import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 function Footer() {
   return (
     <div className='footer'>
@@ -30,18 +30,18 @@ function Footer() {
       </div>
       <div className="footer-col2">
         <div className="col21 col2">
-          <li><Link to={'/contact'}>Contact</Link></li>
-          <li><Link to={'/feeStructure'}>Fee Structure</Link></li>
-          <li><Link to={'/rules'}>Rules & Regulations</Link></li>
-          <li><Link to={'/studentIns'}>Student Instrucitons</Link></li>
-          <li><Link to={'/admissionProcess'}>Admission Process</Link></li>
+          <li><NavLink to={'/contact'}>Contact</NavLink></li>
+          <li><NavLink to={'/feeStructure'}>Fee Structure</NavLink></li>
+          <li><NavLink to={'/rules'}>Rules & Regulations</NavLink></li>
+          <li><NavLink to={'/studentIns'}>Student Instrucitons</NavLink></li>
+          <li><NavLink to={'/admissionProcess'}>Admission Process</NavLink></li>
         </div>
         <div className="col22 col2">
           <li>Complain Box</li>
-          <li><Link to='/socities'>Socities</Link></li>
-          <li><Link to='/programs'>Programs</Link></li>
-          <li><Link to="/examNews">Exam News</Link></li>
-          <li><Link to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</Link></li>
+          <li><NavLink to='/socities'>Socities</NavLink></li>
+          <li><NavLink to='/programs'>Programs</NavLink></li>
+          <li><NavLink to="/examNews">Exam News</NavLink></li>
+          <li><NavLink to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</NavLink></li>
         </div>
       </div>
       <div className="footer-col3">
