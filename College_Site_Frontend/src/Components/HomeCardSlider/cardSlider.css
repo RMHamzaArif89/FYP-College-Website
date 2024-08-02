@@ -1,6 +1,6 @@
 .container {
   width: 90%;
-  height: 440px;
+  height: 36rem;
   margin: 0 auto;
   
 }
@@ -20,51 +20,11 @@
 
 }
 
-.swiper-slide {
-  /* display: flex; */
+.eventSliderCard{
   width: 22rem;
-  height: 90%;
-  border: 1px solid red;
-  background: lightblue;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-
-}
-.swiper-pagination{
-  /* margin: 1rem 0; */
-}
-.eventImg{
-  width: 100%;
-  height: 70%;
- 
-}
-.eventText{
-  width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 100;
+  height: 33rem;
   background: darkred;
+  display: flex;
+  flex-direction: column;
 }
-.eventTitle{
-  font-size: 2rem;
-  color:white;
-
-}
-.eventDate{
-  font-size: 1.4rem;
-  color: rgb(98, 97, 97);
-}
-.eventDescription{
-  font-size: 1.2rem;
-  color: black;
-}
-.swiper-3d .swiper-slide{
-  /* opacity: 0.7; */
-}
-
 

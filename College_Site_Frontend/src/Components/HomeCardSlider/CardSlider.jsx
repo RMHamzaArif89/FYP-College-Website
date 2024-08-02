@@ -1,7 +1,6 @@
 import React from 'react'
 import EventData from './eventData'
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -9,6 +8,12 @@ import 'swiper/css/navigation';
 import './cardSlider.css'
 
 import {Autoplay, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+import { WiTime3 } from "react-icons/wi";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineDateRange } from "react-icons/md";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { eventsPageData } from '../../Pages/EventsPage/eventsPageData';
 
 
 
@@ -48,21 +53,32 @@ function CardSlider() {
         modules={[Autoplay,EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-      {
-        EventData.map((event)=>{
-          return(
-            <SwiperSlide className='swiper-slide'>
-              <img src="" alt="" className='eventImg'/>
-             <div className="eventText">
-             <div className="eventTitle">{event.title}</div>
-              <div className="eventDate">{event.date}</div>
-              <div className="evnetDescription">{event.description}</div>
-             </div>
+  {
+     eventsPageData.map((data)=>
+     <SwiperSlide className="eventSliderCard">
+     <img src={data.img} alt="" className="eventPageCardImg" />
+     <div className="eventPageCardText">
+       <div className="eventPageCardHeading title">
+         {data.title}
+       </div>
+       <div className="eventPageCardDet">
+         {data.detail}
+       </div>
+       <div className="eventPageCardPoints date">
+       <WiTime3  className='eventPageCardPointsIcon'/> {data.date}
+       </div>
+       <div className="eventPageCardPoints time">
+      <MdOutlineDateRange className='eventPageCardPointsIcon'/> {data.time}
+       </div>
+       <div className="eventPageCardPoints locations">
+       <CiLocationOn className='eventPageCardPointsIcon'/> {data.location}
+       </div>
+       <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div>
+     </div>
+   </SwiperSlide>
+     )
 
-            </SwiperSlide>
-          )
-        })
-      }
+  }
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
