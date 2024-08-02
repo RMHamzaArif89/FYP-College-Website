@@ -5,5 +5,100 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    background: white;
+
 }
+.eventsPage .eventPageCon1{
+    width: 100%;
+    height: 60vh;
+    background-image: url('/images/imgSlider1.jpg');
+    background-position:center;
+    background-size: 100% 100%;
+}
+
+.eventPageUpcoming{
+    width:80%;
+    height: 42rem;
+
+}
+
+.upcomingHeading{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: darkred;
+    text-align: left;
+    margin: 1.3rem 0;
+}
+.upcomingCards{
+    display: flex;
+    gap: 1.8rem;
+    width: 100%;
+    height: 90%;
+}
+ .eventPageCard{
+    width: 22rem;
+    height: 32rem;
+    background: darkred;
+}
+.eventPageCard .eventPageCardImg{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    background:red;
+}
+.eventPageCard .eventPageCardText{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 1rem;
+    padding:1.3rem;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.eventPageCardText .eventPageCardHeading{
+    font-size: 1.3rem;
+    color: white;
+    background:lightblue;
+    padding: .6rem 1rem;
+    border-radius: 2px;
+    display:inline-block;
+}
+.eventPageCardText .eventPageCardDet{
+    font-size: 1.4rem;
+    color: lightgray;
+    word-spacing: .7rem;
+}
+.eventPageCardText .eventPageCardPoints{
+    display: flex;
+    gap: .6rem;
+    font-size: 1.3rem;
+    align-items: center;
+    color: white;
+}
+.eventPageCardPointsIcon{
+    font-size: 1.5rem;
+}
+
+
+
+.allEvents{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.allEvents .allEventsHeading{
+    font-size: 3.4rem;
+    color: darkred;
+    text-align: justify;
+    width: 100%;
+    padding: 1.5rem;
+    font-weight:bold;
+}
+
+
+
+

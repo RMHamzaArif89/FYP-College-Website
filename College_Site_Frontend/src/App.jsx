@@ -29,6 +29,7 @@ import StudentIns from './Pages/StudentInstructions/StudentIns';
 import FeeStructure from './Pages/FeeStructure/FeeStructure';
 import Socities from './Pages/Socities/Socities';
 import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
+import EventsPage from './Pages/EventsPage/EventsPage';
 
 
 const router = createBrowserRouter(
@@ -53,6 +54,7 @@ const router = createBrowserRouter(
       <Route path='/feeStructure' element={<FeeStructure/>}/>
       <Route path='/socities' element={<Socities/>}/>
       <Route path='/admissionProcess' element={<AdmissionProcess/>}/>
+      <Route path='/eventsPage' element={<EventsPage/>}/>
       
       
 

@@ -6,7 +6,7 @@ function NavLinks() {
   return (
   <>
    <NavLink to="/" exact activeClassName="active">Home</NavLink>
-                <NavLink to="/events" activeClassName="active">Events</NavLink>
+                <NavLink to="/eventsPage" activeClassName="active">Events</NavLink>
                 <NavLink to="/campusLife" activeClassName="active">Campus Life</NavLink>
                 <NavLink to="/examNews" activeClassName="active">Exam News</NavLink>
                 <NavLink to="/admissionProcess" activeClassName="active">Admissoin Process</NavLink>
