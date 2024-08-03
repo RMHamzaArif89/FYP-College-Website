@@ -1,19 +1,18 @@
 .homeGallery {
   width: 50%;
-  height: 100%;
+  height: 36rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   overflow: hidden;
-  padding: 1rem 0;
+  gap: 2rem;
   
 }
 
 .swiper {
   width: 26rem;
-  height: 32rem;
-
-  
+  height: 30rem;  
 }
 
 .swiper-slide {
@@ -33,4 +32,30 @@
   height: 100%;
   object-fit: cover;
 
+}
+.galleryPageLink{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.galleryPageLink a{
+  text-decoration: none;
+  padding: .8rem 1.2rem;
+  font-size: 1.5rem;
+  background: lightslategray;
+  color: darkred;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
+.galleryPageLink a:hover{
+  background: rgba(119, 136, 153, 0.774);
+  cursor: pointer;
+  color: white;
 }

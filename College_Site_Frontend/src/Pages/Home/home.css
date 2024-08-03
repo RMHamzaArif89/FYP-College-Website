@@ -9,7 +9,7 @@
 .campusDet{
     width: 90%;
     margin: 0 auto;
-    min-height:440px;
+    min-height:36rem;
     height: auto;
     display: flex;
     gap: 1rem;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './homeCamLife.css'
 
+
 function HomeCamLife() {
   return (
     <div className='homeCamLife'>

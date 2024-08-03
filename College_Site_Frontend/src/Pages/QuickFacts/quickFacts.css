@@ -29,6 +29,8 @@
    
 }
 .quickFactsSwiperSlide{
+    width: 22rem;
+    height: 100%;
     background: rgba(253, 254, 255, 0.865);
     box-shadow: 0 0 8px inset rgba(91, 4, 4, 0.8);
     border: none;

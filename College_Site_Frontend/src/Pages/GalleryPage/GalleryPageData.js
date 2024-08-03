@@ -1,0 +1,29 @@
+export const GalleryPageData=[
+    {
+        img:'/images/imgSlider1.jpg'
+    },
+    {
+        img:'/images/imgSlider2.jpg'
+    },
+    {
+        img:'/images/imgSlider3.jpg'
+    },
+    {
+        img:'/images/imgSlider1.jpg'
+    },
+    {
+        img:'/images/imgSlider3.jpg'
+    },
+    {
+        img:'/images/imgSlider2.jpg'
+    },
+    {
+        img:'/images/imgSlider3.jpg'
+    },
+    {
+        img:'/images/imgSlider2.jpg'
+    },
+    {
+        img:'/images/imgSlider1.jpg'
+    },
+]

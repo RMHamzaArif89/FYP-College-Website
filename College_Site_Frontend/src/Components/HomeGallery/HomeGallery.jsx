@@ -5,8 +5,9 @@ import {Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-
 import './homeGallery.css';
+import { Link } from 'react-router-dom'
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 // import required modules
 import { EffectCards, Autoplay} from 'swiper/modules';
@@ -43,6 +44,9 @@ export default function HomeGallery() {
         }
        
       </Swiper>
+      <div className="galleryPageLink">
+        <Link to={'/galleryPage'}>Gallery <FaLongArrowAltRight/> </Link>
+      </div>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 .container {
   width: 90%;
-  height: 36rem;
-  margin: 0 auto;
+  height: 38rem;
+  margin: 2rem auto;
   
 }
 
@@ -22,9 +22,33 @@
 
 .eventSliderCard{
   width: 22rem;
-  height: 33rem;
+  height: 90%;
   background: darkred;
   display: flex;
   flex-direction: column;
 }
+.eventsPageLink{
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.eventsPageLink a{
+  text-decoration: none;
+  padding: .8rem 1.2rem;
+  font-size: 1.5rem;
+  background: lightslategray;
+  color: darkred;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
 
+.eventsPageLink a:hover{
+  background: rgba(119, 136, 153, 0.774);
+  cursor: pointer;
+  color: white;
+}

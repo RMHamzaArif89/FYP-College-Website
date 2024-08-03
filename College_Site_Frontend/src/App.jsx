@@ -30,6 +30,7 @@ import FeeStructure from './Pages/FeeStructure/FeeStructure';
 import Socities from './Pages/Socities/Socities';
 import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
 import EventsPage from './Pages/EventsPage/EventsPage';
+import GalleryPage from './Pages/GalleryPage/GalleryPage';
 
 
 const router = createBrowserRouter(
@@ -55,6 +56,8 @@ const router = createBrowserRouter(
       <Route path='/socities' element={<Socities/>}/>
       <Route path='/admissionProcess' element={<AdmissionProcess/>}/>
       <Route path='/eventsPage' element={<EventsPage/>}/>
+      <Route path='/GalleryPage' element={<GalleryPage/>}/>
+
       
       
 

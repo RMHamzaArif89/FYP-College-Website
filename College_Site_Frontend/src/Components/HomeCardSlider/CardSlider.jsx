@@ -14,6 +14,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineDateRange } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { eventsPageData } from '../../Pages/EventsPage/eventsPageData';
+import {Link} from 'react-router-dom';
 
 
 
@@ -90,6 +91,9 @@ function CardSlider() {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
+      <div className="eventsPageLink">
+        <Link to={'/eventsPage'}>Explore More <FaLongArrowAltRight/> </Link>
+      </div>
     </div>
   )
 }
