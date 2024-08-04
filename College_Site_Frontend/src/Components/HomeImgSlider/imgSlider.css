@@ -13,22 +13,38 @@
  position: relative;
  display: flex;
  align-items: center;
- justify-content: center;
  gap: 1rem;
  flex-direction: column;
+ align-items: flex-start;
+ justify-content: end;
 
+}
+.imgConText{
+    width: 100%;
+    height: 8rem;
+    background: #44030353;
+    padding: 2rem .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
 }
 .imgSliderH1{
     font-size: 2.8rem;
-    text-align: center;
-    color: rgb(180, 18, 18);
+    text-align: justify;
     font-weight: bolder;
+    color:white;
+    width: 70%;
+
+
 
 }
 .imgSliderH2{
     font-size: 2.4rem;
     color: white;
-    text-align: center;
+    text-align: justify;
+    color:white;
+    width: 70%;
+   
 }
 
 .sliderLeft{

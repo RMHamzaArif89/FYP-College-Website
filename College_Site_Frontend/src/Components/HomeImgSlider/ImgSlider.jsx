@@ -52,8 +52,6 @@ function ImgSlider() {
 
     })
 
-
-
     return (
         <div className='imgSlider'>
             <ImgCon data={data[val].imgUrl} />
@@ -66,6 +64,7 @@ function ImgSlider() {
                         return <li key={ind} className='sliderDot' onClick={() => { clickFunc(ind) }} style={{ backgroundColor: val == ind && 'darkred' }}> </li>
                     })
                 }
+                
             </div>
         </div>
     )

@@ -119,6 +119,7 @@
 
 }
 .footerContactInfo{
+    padding:1rem;
     width: 95%;
     height: 90%;
     display: flex;
@@ -132,8 +133,11 @@
     list-style: none;
     display: flex;
     gap: 0.6rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: white;
+    text-align:justify;
+    align-self:self-start;
+    align-items:center;
 }
 .footerContactInfo li .call{
     color: black;
@@ -141,10 +145,11 @@
 }
 .footerContactInfo li .mail{
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .footerContactInfo li .address{
     color:black;
+    font-size:1.3rem;
 }
 
 

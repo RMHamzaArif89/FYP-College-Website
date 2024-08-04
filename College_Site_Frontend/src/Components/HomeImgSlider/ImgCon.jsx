@@ -7,12 +7,14 @@ function ImgCon(data) {
         backgroundSize:' 100% 100%',
     }
   
-    
   return (
     <div className='imgCon' style={imgSliderStyle}>
-        
-        <div className="imgSliderH1">Welcom to the College</div>
+      <div className='imgConText'>
+         
+      <div className="imgSliderH1">Welcom to the College</div>
         <div className="imgSliderH2">We Provide u the best</div>
+
+      </div>
       
     </div>
   )

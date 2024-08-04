@@ -54,7 +54,8 @@ function Footer() {
         <div className="footerContactInfo">
           <li>
             <FaLocationArrow className='address' />
-            near xyz....
+            College Rd, Samanabad, Faisalabad, Punjab
+
           </li>
           <li>
             <IoCall className='call' />
