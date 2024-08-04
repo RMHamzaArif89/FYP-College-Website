@@ -58,10 +58,6 @@ const router = createBrowserRouter(
       <Route path='/eventsPage' element={<EventsPage/>}/>
       <Route path='/GalleryPage' element={<GalleryPage/>}/>
 
-      
-      
-
-
     </Route>
       ));
 

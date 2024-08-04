@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactDom from 'react-dom'
 import './galleryPage.css'
 import { GalleryPageData } from './GalleryPageData'
+import GalleryImgModal from './GalleryModal';
+
+
+// import HoImagesModal from '../../Components/HouseImagesModal/HouseImagesModal'
 
 function GalleryPage() {
+    const [showImageModal,setShowImageModal]=useState(false)
+    const [ind,setInd]=useState(0)
+    const ClickOnImg=(i)=>{
+        setInd(i) 
+        setShowImageModal(true)
+        
+    }
     return (
         <div className='galleryPage'>
             <div className="galleryPageCon">
@@ -16,11 +28,18 @@ function GalleryPage() {
 
             <div className="galleryPageCon2">
              {
-                GalleryPageData.map((data)=>
-                <img src={data.img} alt="" className="galleryImg" />
+                GalleryPageData.map((data,i)=>
+                <img src={data.img} alt="" onClick={()=>ClickOnImg(i)} className="galleryImg" />
                 )
              }
             </div>
+            
+    {
+      showImageModal&& ReactDom.createPortal(
+        <GalleryImgModal img={GalleryPageData[ind].img} setModal={setShowImageModal}/>,
+         document.querySelector('.modalPortal')
+      )
+    }
 
         </div>
     )
