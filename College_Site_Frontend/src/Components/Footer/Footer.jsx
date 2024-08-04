@@ -52,7 +52,7 @@ function Footer() {
           </li>
           <li>
             <IoCall className='call' />
-            0419330094-95
+            042-9330094
           </li>
           <li>
             <MdOutlinePhoneAndroid className='call' />
@@ -60,7 +60,7 @@ function Footer() {
           </li>
           <li>
             <IoMdMail className='mail' />
-            info@gcsf.edu.pk
+            gpgcsa.fsd@gmail.com
           </li>
 
         </div>

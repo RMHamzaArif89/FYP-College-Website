@@ -25,6 +25,8 @@
 .historyContainer .historyText{
     font-size: 1.3rem;
     color:rgb(150, 209, 229);
+    color: white;
+    font-weight: bold;
     line-height: 1.6;
     word-spacing: 0.4rem;
 

@@ -1,7 +1,8 @@
 .container {
   width: 90%;
-  height: 38rem;
-  margin: 2rem auto;
+  height: 42rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
   
 }
 
@@ -15,8 +16,8 @@
 
 
 .swiper_container {
-  height: 100% !important;
-  width: 100% !important;
+  height: 95% !important;
+  width: 95% !important;
 
 }
 

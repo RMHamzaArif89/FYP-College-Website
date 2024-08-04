@@ -7,9 +7,9 @@
     width: 100%;
     height: calc(100vh - 3.8rem);
     background:darkred;
-    background-image: linear-gradient( rgba(88, 9, 9, 0.287), rgba(118, 8, 8, 0.282) ), url('/images/sportsPage.png');
+    /* background-image: linear-gradient( rgba(88, 9, 9, 0.287), rgba(118, 8, 8, 0.282) ), url('/images/sportsPage.png');
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
     display: flex;
     align-items: center;
     justify-content: left;
@@ -22,11 +22,15 @@
     font-size: 3.4rem;
     color: white;
     font-weight: bolder;
+    align-self: self-start;
+    text-align: justify;
 
 }
 .sportsHeading2{
     font-size: 2.6rem;
     color: lightcoral;
+    align-self: self-start;
+    text-align: justify;
 }
 .sportsText{
     font-size: 1.8rem;
@@ -34,8 +38,8 @@
     font-weight: bold;
 }
 .sportsSwiper{
-    width: 24rem;
-    height: 26rem;
+    width: 22rem;
+    height: 24rem;
 
 }
 .sportsSwiperSlide{
@@ -45,23 +49,28 @@
     background-position: center;
     border-radius: 0.2rem;
     border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
 .cubeHeading{
     font-size: 2rem;
     color: black;
     font-weight: bold;
+    justify-self: flex-start;
 }
 .cubeText{
     font-size: 1.3rem;
     color: white;
+    justify-self: flex-end;
 }
 
 
 .sportsCon2{
     width: 100%;
-    height: 32rem;
-    padding: 2rem 3rem;
+    height: 50rem;
+    padding: 1rem 3rem;
     display: flex;
     gap: 1rem;
    
@@ -130,12 +139,24 @@
 .sportsCol2{
     width:50%;
     height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     /* padding:1rem; */
 }
 .sportsCol2 video{
-    width:100%;
-    height:100%;
+    width:34rem;
+    height:24rem;
     border: none;
+
+}
+.sportsH1{
+    padding: 1rem 3rem;
+   color: darkred;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: justify;
+    border-radius: 3px;
 
 }
 

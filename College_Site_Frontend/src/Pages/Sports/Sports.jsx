@@ -5,6 +5,7 @@ import {Autoplay, Pagination , EffectCube} from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import './sports.css'
+import SportsGallery from './SportsGallery';
 
 function Sports() {
   return (
@@ -48,6 +49,8 @@ function Sports() {
       </Swiper>
       </div>
 
+      <div className="sportsH1">Sports Events</div>
+
       <div className="sportsCon2">
         <div className="sportsCol1">
           {
@@ -69,6 +72,7 @@ function Sports() {
         <video src="/video/homepagevideo.mp4" controls muted autoplay></video>
         </div>
       </div>
+      <SportsGallery />
     </div>
 
   )
