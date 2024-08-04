@@ -52,8 +52,8 @@ function QuickFacts() {
             <SwiperSlide className='quickFacts_swiper_slide quickFactsSwiperSlide'>
               
              
-             <div className="eventTitle">{facts.name}</div>
-              <div className="eventDate">{facts.value}</div>
+             <div className="factsName">{facts.name}</div>
+              <div className="factsValue">{facts.value}</div>
              
              
 

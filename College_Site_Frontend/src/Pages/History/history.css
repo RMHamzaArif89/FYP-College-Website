@@ -31,3 +31,32 @@
     word-spacing: 0.4rem;
 
 }
+
+.exPrinciplesTable{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .exPrinciplesHeading{
+    font-size: 2.8rem;
+    color: darkred;
+    font-weight: bolder;
+    padding: 2rem;
+  }
+  
+ .exPrinciplesTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  .exPrinciplesTable .principlesName{
+    font-size: 1.3rem;
+    color: darkred;
+    font-weight: bold;
+  }
+  
+ .exPrinciplesTable tr:nth-child(even) {
+    background-color: #c4c2c2;
+  }
