@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* font-family: "Arial", sans-serif; */
  
 }
 .footerLogo .footerLogoImg{
@@ -103,6 +104,7 @@
     font-size: 1.2rem;
     text-decoration: none;
     text-align: justify;
+    font-family: "Roboto", sans-serif;
 }
 .col2 li:hover{
     color: lightcoral;
@@ -138,6 +140,7 @@
     text-align:justify;
     align-self:self-start;
     align-items:center;
+    font-family: "Open Sans", sans-serif;
 }
 .footerContactInfo li .call{
     color: black;

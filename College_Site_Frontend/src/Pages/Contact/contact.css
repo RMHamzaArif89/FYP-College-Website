@@ -23,6 +23,7 @@
     font-size: 1rem;
     align-items: center;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 .contactInfoBtn .contactInfoImg{
     width: 1.5rem;
@@ -68,6 +69,7 @@
     justify-content: space-around;
     border: none;
     outline: none;
+    font-family: "Lato", sans-serif;
 }
 .contactServices{
     width: 80%;
@@ -81,7 +83,7 @@
     color: white;
     padding: 0.3rem;
     border-radius: 8px;
-    
+    font-family: "Lato", sans-serif;
    
 }
 .contactInput:hover{
@@ -101,6 +103,7 @@
     background: darkred;
     font-size: 1.2rem;
     color: white;
+    font-family: "Roboto", sans-serif;
 
 
 }

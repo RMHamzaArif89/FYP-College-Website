@@ -33,6 +33,8 @@ strong {
     position: relative;
     text-shadow: 0 1px 0 #000;  
     font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+
   }
   
   th:after {
@@ -64,6 +66,7 @@ strong {
     position: relative;
     transition: all 300ms;
     font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
   }
   
   td:first-child {

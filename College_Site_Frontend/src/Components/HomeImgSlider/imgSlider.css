@@ -23,10 +23,10 @@
     width: 100%;
     height: 8rem;
     background: #44030353;
-    padding: 2rem .6rem;
+    padding: .3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: .3rem;
 }
 .imgSliderH1{
     font-size: 2.8rem;
@@ -34,7 +34,7 @@
     font-weight: bolder;
     color:white;
     width: 70%;
-
+    font-family: "Open Sans", sans-serif;
 
 
 }
@@ -44,13 +44,14 @@
     text-align: justify;
     color:white;
     width: 70%;
+    font-family: "Open Sans", sans-serif;
    
 }
 
 .sliderLeft{
     position: absolute;
     top: 50%;
-    left: 4%;
+    left: 2%;
     transform: translate(0,50%);
 
 }
@@ -58,7 +59,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0,50%);
-    right: 4%;
+    right: 2%;
 }
 .sliderMove{
     font-size: 3rem;
@@ -74,7 +75,7 @@
 
 .pagin{
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     left: 40%;
     width: 20%;
     height: 10%;

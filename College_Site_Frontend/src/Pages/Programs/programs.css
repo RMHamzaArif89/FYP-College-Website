@@ -27,6 +27,7 @@
     border-radius: 6px;
     background: darkred;
     color: white;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -56,6 +57,7 @@
     color: darkred;
     outline: none;
     border: 1px solid darkred;
+    font-family: "Roboto", sans-serif;
 }
 .programsCard{
     width: 16rem;
@@ -72,6 +74,7 @@
 .programsCard .programsTitle{
     font-size: 2rem;
     color: white;
+    font-family: "Open Sans", sans-serif;
 }
 .bsProgramsCard .programsImg{
     width: 100%;
@@ -84,4 +87,5 @@
     font-size: 1.2rem;
     color: lightgray;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }

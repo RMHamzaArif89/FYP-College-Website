@@ -20,12 +20,15 @@
     text-align: justify;
     font-weight: bolder;
     
+  font-family: "Roboto", sans-serif;
+    
     
 }
 .introPara{
     font-size: 1.4rem;
     color: rgb(136, 134, 134);
-    font-family: serif;
+    
+  font-family: "Roboto", sans-serif;
     line-height: 2.1rem;
     text-align:justify;
     margin: 0.8rem 0;

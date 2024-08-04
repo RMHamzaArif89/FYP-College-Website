@@ -24,6 +24,7 @@
     font-weight: bolder;
     align-self: self-start;
     text-align: justify;
+    font-family: "Roboto", sans-serif;
 
 }
 .sportsHeading2{
@@ -31,11 +32,13 @@
     color: lightcoral;
     align-self: self-start;
     text-align: justify;
+    font-family: "Roboto", sans-serif;
 }
 .sportsText{
     font-size: 1.8rem;
     color: white;
     font-weight: bold;
+    font-family: "Open Sans", sans-serif;
 }
 .sportsSwiper{
     width: 22rem;
@@ -59,11 +62,13 @@
     color: black;
     font-weight: bold;
     justify-self: flex-start;
+    font-family: "Roboto", sans-serif;
 }
 .cubeText{
     font-size: 1.3rem;
     color: white;
     justify-self: flex-end;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -120,20 +125,23 @@
     gap: 1.2rem;
     padding: 1rem;
     flex-direction: column;
-
+    font-family: "Open Sans", sans-serif;
 }
 .sportsCol1Text .sportsCol1Title{
     font-size: 2rem;
     font-weight: bold;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 .sportsCol1Text .sportsCol1Date{
     font-size: 1.5rem;
     color: lightblue;
+    font-family: "Roboto", sans-serif;
 }
 .sportsCol1Text .sportsCol1Detail{
     font-size: 1rem;
     color: black;
+    font-family: "Roboto", sans-serif;
 }
 
 .sportsCol2{
@@ -157,6 +165,7 @@
     font-weight: bold;
     text-align: justify;
     border-radius: 3px;
+    font-family: "Roboto", sans-serif;
 
 }
 

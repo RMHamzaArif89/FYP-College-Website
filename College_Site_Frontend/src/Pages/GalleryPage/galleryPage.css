@@ -28,17 +28,18 @@
     padding: 1rem 4rem;
     text-align: center;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    font-family: "Roboto", sans-serif;
 }
 .galleryPageConText .conTextHeading{
     font-size: 2.4rem;
     color: white;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 .galleryPageConText .conTextDet{
     font-size: 1.2rem;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .galleryPageCon2{
@@ -96,6 +97,7 @@
     transition: all .6s linear;
     transform: scale(0.9);
     animation: scale 1s 1s forwards infinite;
+    font-family: "Roboto", sans-serif;
     
    
 }

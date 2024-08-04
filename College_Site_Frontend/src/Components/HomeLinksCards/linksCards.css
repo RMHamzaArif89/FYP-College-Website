@@ -38,6 +38,7 @@
     left: -2rem;
     bottom: 0;
     text-decoration:none;
+    font-family: "Roboto", sans-serif;
 
 }
 @keyframes title {

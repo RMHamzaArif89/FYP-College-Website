@@ -22,11 +22,13 @@
     font-size: 3rem;
     color: darkred;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 .socitiesPageCon .socitiesPageConText{
     font-size: 1.8rem;
     color: black;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .socities {
@@ -67,7 +69,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: darkred;
-
+    font-family: "Roboto", sans-serif;
 }
 
 .socitiesCard .socitiesCardBtn {
@@ -78,6 +80,7 @@
     text-align: center;
     color: white;
     background: darkred;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -110,6 +113,7 @@
     align-items: center;
     gap: 1rem;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -120,6 +124,7 @@
     color: white;
     font-weight: bold;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -147,9 +152,11 @@
     font-size: 2rem;
     color: darkred;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
 .socitiesCubeText {
     font-size: 1.3rem;
     color: black;
+    font-family: "Roboto", sans-serif;
 }

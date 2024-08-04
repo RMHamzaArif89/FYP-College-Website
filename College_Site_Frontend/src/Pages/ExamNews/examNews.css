@@ -100,30 +100,38 @@
     color: white;
     font-weight: bold;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 .examCardSelectedDate{
     padding: .4rem;
     text-align: left;
+    font-family: "Roboto", sans-serif;
 }
 .examDate{
     text-align: left;
     font-size: 1.4rem;
     color:white;
+    font-family: "Roboto", sans-serif;
 }
+
 .examCardSelected .examCardSelectedH5{
     font-size: 2rem;
     display: flex;
     gap: .8rem;
     color: white;
     align-items: center;
-
+    font-family: "Roboto", sans-serif;
 }
+
+
 .examCardSelected .examCardSelectedDes{
     font-size: 1.2rem;
     color: lightgray;
     text-align: left;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
+
 .selectedItem img{
     width: 2.4rem;
     height: 2.4rem;

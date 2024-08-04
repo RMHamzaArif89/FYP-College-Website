@@ -18,12 +18,14 @@
     font-weight: bolder;
     font-size: 4rem;
     align-self: flex-start;
+    font-family: "Lato", sans-serif;
 }
 .quickFactsDescription{
     color: rgba(255, 255, 255, 0.911);
     font-size: 1.6rem;
     text-align: justify;
     align-self: flex-start;
+    font-family: "Lato", sans-serif;
 }
 .quickFacts_swiper_container{
     width: 100%;
@@ -42,15 +44,18 @@
     flex-direction: column;
     justify-content: center;
     gap: .8rem;
+    padding: 1.4rem;
 }
 .factsName{
     font-size: 2.8rem;
     color: darkred;
     font-weight: bold;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 .factsValue{
     font-size: 2.4rem;
     color:black;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }

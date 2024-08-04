@@ -19,12 +19,14 @@
     margin-top: 3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
 
 }
 .rulesDetails{
     font-size: 1.2rem;
-    color:lightcoral;
+    color: white;
     letter-spacing: 0.60px;
+    font-family: "Open Sans", sans-serif;
 
 }
 .rulesPoints{
@@ -35,9 +37,11 @@
     font-size: 1.1rem;
     font-style: Arial;
     color: lightsalmon;
+    color: white;
     /* word-spacing: .8px; */
     letter-spacing: 0.60px;
     margin-top: .7rem;
+    font-family: "Open Sans", sans-serif;
 }
 .rulesPoints img{
     width: 1.3rem;
