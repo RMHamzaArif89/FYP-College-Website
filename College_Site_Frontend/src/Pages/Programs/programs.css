@@ -22,8 +22,8 @@
 }
 .programsNavSections a{
     text-decoration: none;
-    padding: 1.2rem;
-    font-size: 1.8rem;
+    padding: 1rem;
+    font-size: 1.2rem;
     border-radius: 6px;
     background: darkred;
     color: white;
@@ -60,21 +60,24 @@
     font-family: "Roboto", sans-serif;
 }
 .programsCard{
-    width: 16rem;
+    width: 18rem;
     height: 14rem;
     border-radius: 3px;
     background: darkred;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.4rem;
+    gap: .3rem;
     position: relative;
     flex-direction: column;
+    padding: 1rem;
 }
 .programsCard .programsTitle{
     font-size: 2rem;
     color: white;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
 .bsProgramsCard .programsImg{
     width: 100%;
