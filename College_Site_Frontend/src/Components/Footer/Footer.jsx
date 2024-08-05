@@ -45,6 +45,7 @@ function Footer() {
         <div className="col22 col2">
           <li><NavLink to='/history'>History</NavLink></li>
           <li><NavLink to='/socities'>Socities</NavLink></li>
+          <li><NavLink to='/noticeboard'>Noticeboard</NavLink></li>
 
           <li><NavLink to="/examNews">Exam News</NavLink></li>
     

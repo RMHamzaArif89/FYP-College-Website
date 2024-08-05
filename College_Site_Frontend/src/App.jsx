@@ -31,7 +31,8 @@ import Socities from './Pages/Socities/Socities';
 import AdmissionProcess from './Pages/AdmissionProcess/AdmissionProcess';
 import EventsPage from './Pages/EventsPage/EventsPage';
 import GalleryPage from './Pages/GalleryPage/GalleryPage';
-
+import Admission from './Pages/Admission/Admission';
+import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -57,6 +58,8 @@ const router = createBrowserRouter(
       <Route path='/admissionProcess' element={<AdmissionProcess/>}/>
       <Route path='/eventsPage' element={<EventsPage/>}/>
       <Route path='/GalleryPage' element={<GalleryPage/>}/>
+      <Route path='/admission' element={<Admission/>}/>
+      <Route path='/noticeboard' element={<Noticeboard/>}/>
 
     </Route>
       ));

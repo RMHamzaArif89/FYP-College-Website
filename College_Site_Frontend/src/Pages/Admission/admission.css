@@ -1,0 +1,13 @@
+.admission{
+    width: 100%;
+    min-height: calc(100vh - 3.4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admissionHeading{
+    font-size: 3rem;
+    color: darkred;
+    font-family: 'Open Sans','sans-serif';
+    font-weight: bold;
+}
