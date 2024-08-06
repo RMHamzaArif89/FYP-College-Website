@@ -10,6 +10,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+    position: relative;
 }
 .programsContainer .programsNavSections{
     width: 80%;
@@ -86,9 +87,71 @@
     top:0;
     left: 0;
 }
-.programsProgramsCard .programsDes{
+.programsCard .programsBtn{
     font-size: 1.2rem;
-    color: lightgray;
+    padding: .5rem .7rem;
+    color: darkred;
+    background: white;
+    font-family: 'Roboto','sans-serif';
+    border-radius: 4px;
+    transition: all .3s linear;
+}
+.programsBtn:hover{
+background: rgba(223, 221, 221, 0.895);
+cursor: pointer;
+}
+
+.programsModalCon{
+    width: 100%;
+    height: 100vh;
+    background: #0000007d;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.programsModal{
+    width: 50%;
+    min-height:24rem;
+    max-height: auto;
+    padding: 3rem;
+    display: flex;
+    gap: .9rem;
+    flex-direction: column;
+    background:rgba(139, 0, 0, 0.988);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+   
+}
+ .programsModalHeading{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    color: darkred;
     text-align: center;
-    font-family: "Roboto", sans-serif;
+    padding: .5rem;
+    background: darkgray;
+    display:inline;
+}
+.programsModalHeading2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    color: white;
+    text-align: justify;
+}
+ .programsModalDes{
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Roboto','sans-serif';
+    text-align: justify;
+
 }

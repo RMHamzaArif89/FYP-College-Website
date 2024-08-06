@@ -20,8 +20,10 @@
 
 
 .examCard{
-    width: 40%;
-    height: 14rem;
+    min-height: 40%;
+    max-width: auto;
+    min-height: 14rem;
+    max-height: auto;
     display: flex;
     cursor: pointer;
     flex-direction: column;

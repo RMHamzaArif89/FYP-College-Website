@@ -10,7 +10,9 @@ function EventsPage() {
   return (
     <div className='eventsPage'>
       <div className="eventPageCon1">
-        GPCSF Organize multiple Events in a year with consistencey
+        <div className="eventConText">
+          <div className="eventConTextH1">  GPCSF Organize multiple Events in a year with consistencey</div>
+        </div>
       </div>
       <div className="eventPageUpcoming">
         <div className="upcomingHeading">

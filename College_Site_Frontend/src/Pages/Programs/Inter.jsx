@@ -15,7 +15,7 @@ function Inter() {
                     return(
                    <div className="programsCard">
                     <div className="programsTitle ">{data.title}</div>
-                        <div className="programsImg">{data.img}</div>
+                      <img src={data.img} alt="" className="programsImg" />
                         <div className="programsDes">{data.description}</div>
                    </div>
                     )
