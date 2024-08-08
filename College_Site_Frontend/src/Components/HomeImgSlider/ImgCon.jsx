@@ -11,7 +11,7 @@ function ImgCon(data) {
     <div className='imgCon' style={imgSliderStyle}>
       <div className='imgConText'>
          
-      <div className="imgSliderH1">Welcom to the College</div>
+      <div className="imgSliderH1">Welcom to the GPCSF</div>
         <div className="imgSliderH2">We Provide u the best</div>
 
       </div>
