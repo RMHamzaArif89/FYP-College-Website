@@ -1,0 +1,34 @@
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import cors from 'cors'
+import bodyParser from 'body-parser'
+
+import cookieParser from 'cookie-parser';
+import path from 'path';
+
+
+const app=express()
+
+var corsOptions = {
+    origin: 'http://localhost:5173',
+    methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
+    credentials:true,
+    optionsSuccessStatus: 200 
+  }
+app.use(cors(corsOptions))
+
+app.use(express.static('upload'))
+
+
+//this is middleWare use to encode the form&body request value //example req.body from form
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.json())
+
+
+//require the db connection
+import ('./db/Connection.js')
+
+app.listen(5001,()=>{
+    console.log('port is listening')
+})
