@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 
-import Layout from './Pages/Layout.jsx';
+import Layout from './Pages/Layout/Layout.jsx';
 import Home from './Pages/Home/Home';
 import Location from './Pages/Location/Location';
 import QuickFacts from './Pages/QuickFacts/QuickFacts';
@@ -34,12 +34,18 @@ import GalleryPage from './Pages/GalleryPage/GalleryPage';
 import Admission from './Pages/Admission/Admission';
 import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
 
+
+//admin pages
+import AdminLayout from './Pages/Layout/AdminLayout.jsx'
+import AdminPage from './Pages/AdminPage/AdminPage';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Layout />}>
+    <Route>
 
 
-      <Route path="/" index element={<Home />} />
+   <Route element={<Layout />}>
+   <Route path="/" index element={<Home />} />
       <Route path='/location' element={<Location />} />
       <Route path='/quickFacts' element={<QuickFacts />} />
       <Route path='/sports' element={<Sports />} />
@@ -60,8 +66,14 @@ const router = createBrowserRouter(
       <Route path='/GalleryPage' element={<GalleryPage/>}/>
       <Route path='/admission' element={<Admission/>}/>
       <Route path='/noticeboard' element={<Noticeboard/>}/>
+   </Route>
+
+   <Route element={<AdminLayout/>}>
+<Route path='/adminPage' element={<AdminPage/>}/>
+   </Route>
 
     </Route>
+    
       ));
 
       function App() {

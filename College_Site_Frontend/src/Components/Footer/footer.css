@@ -100,16 +100,15 @@
 
 }
 .col2 li a{
-    color: white;
-    font-size: 1.2rem;
+    color: lightgray;
+    font-size: 1rem;
     text-decoration: none;
     text-align: justify;
     font-family: "Roboto", sans-serif;
 }
 .col2 li:hover{
-    color: lightcoral;
+    color:white;
     cursor: pointer;
-    border-bottom: 1px solid rgb(18, 17, 17);
 }
 .footer-col3{
     width: 20%;
@@ -136,7 +135,7 @@
     display: flex;
     gap: 0.6rem;
     font-size: 1.2rem;
-    color: white;
+    color: lightgray;
     /* text-align:justify; */
     align-self:self-start;
     align-items:center;

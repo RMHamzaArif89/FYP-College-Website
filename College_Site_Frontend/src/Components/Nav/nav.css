@@ -47,14 +47,13 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
+  display: inline-block; 
+  position: relative; 
+  color:lightcoral;
+  padding: 0.4rem 0;
  } 
  
- .nav-links a {
-   display: inline-block; 
-   position: relative; 
-   color:lightcoral;
-   padding: 0.4rem 0;
- }
+ 
  
  .nav-links a:after {
    content: '';
