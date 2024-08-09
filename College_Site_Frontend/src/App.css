@@ -1,0 +1,7 @@
+.adminContainer{
+    width: 100%;
+    min-height:calc(100vh -3.4rem);
+    max-height: auto;
+    display: flex;
+    gap: 1rem;
+}

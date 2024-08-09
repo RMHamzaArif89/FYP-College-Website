@@ -1,6 +1,6 @@
 .sideBarAdmin{
     width: 16%;
-    height: 100vh;
+    height: calc(100vh - 3rem);
     display: flex;
     align-items: center;
     flex-direction: column;
