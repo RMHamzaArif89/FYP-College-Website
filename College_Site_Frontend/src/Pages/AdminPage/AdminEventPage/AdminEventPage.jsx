@@ -34,32 +34,54 @@ const navigate=useNavigate()
 
   }
 
-  const handleSubmit=async(e)=>{
-    e.preventDefault();
-    console.log(values)
-    try {
-      const res = await fetch('/api/event/createEvent', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        setPublishError(data.message);
-        return;
-      }
+  // const handleSubmit=async(e)=>{
+  //   e.preventDefault();
+  //   console.log(values)
 
-      if (res.ok) {
-        setPublishError(null);
-        navigate(`AdminPage`);
-      }
-    } catch (error) {
-      setPublishError('Something went wrong');
-    }
+  //   try {
+  //     const res = await fetch('http://localhost:5001/events', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+  //     const data = await res.json();
+  //     if (!res.ok) {
+  //       setPublishError(data.message);
+  //       console.log(error)
+  //       return;
+  //     }
+
+  //     if (res.ok) {
+  //       setPublishError(null);
+  //       navigate(`AdminPage`);
+  //     }
+  //   } catch (error) {
+  //     setPublishError('Something went wrong');
+  //   }
+  // }
+const handleSubmit=async(e)=>{
+  e.preventDefault()
+  
+  console.log('enter')
+  const response = await fetch(`/ok`, {
+    method: 'GET',
+    credentials:'include'
+
+  })
+  const res = await response.json()
+
+  if (res) {
+    // console.log(res.data)
+    console.log('ok')
+    
+ 
+
+  }else{
+    console.log('false')
   }
-
+}
   return (
     <div className='adminEventPage'>
       <form className='adminEventPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>

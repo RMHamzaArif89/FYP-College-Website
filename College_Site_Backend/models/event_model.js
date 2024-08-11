@@ -8,7 +8,7 @@ const Events= new mongoose.Schema({
 
     },
     detail:{
-        type:text,
+        type:String,
         // required:true
 
     },
@@ -38,14 +38,7 @@ const Events= new mongoose.Schema({
 })
 
 
+const eventModel= new mongoose.model("Events",Events)
 
 
-
-
-
-
-// mongoose collection name specfied//created the new collection|table
-const Cities_house= new mongoose.model("Events",Events)
-
-//export the schema that will be import in the main.js file
-module.exports=Cities_house;
+export default eventModel;
