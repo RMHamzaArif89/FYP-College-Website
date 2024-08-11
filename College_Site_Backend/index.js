@@ -30,15 +30,6 @@ app.use(express.json())
 
 //routes
 app.use('/api/events', events_Routes);
-app.post('/events',(req,res)=>{
-  console.log('eventspost')
-})
-app.get('/ok',async(req,res)=>{
-  console.log('enter')
-  return res.status(200)
-})
-
-
 
 //require the db connection
 import ('./db/Connection.js')

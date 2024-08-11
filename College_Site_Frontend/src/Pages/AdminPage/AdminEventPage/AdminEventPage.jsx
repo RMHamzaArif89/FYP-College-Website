@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
+import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
 import './AdminEventPage.css'
 
@@ -65,39 +66,76 @@ const handleSubmit=async(e)=>{
   e.preventDefault()
   
   console.log('enter')
-  const response = await fetch(`/ok`, {
-    method: 'GET',
-    credentials:'include'
 
-  })
-  const res = await response.json()
 
-  if (res) {
-    // console.log(res.data)
-    console.log('ok')
+  try{
+    e.preventDefault()
+
+    const formData=new FormData()
+    formData.append("img",values.img)
+    formData.append("title",values.title)
+    formData.append("date",values.date)
+    formData.append("detail",values.detail)
+    formData.append("time",values.time)
+    formData.append("location",values.location)
+
+
+    const res=await axios.post(
+      'http://localhost:5001/api/events/createEvent',
+         formData,{
+         headers:{
+           "Content-Type":"multipart/form-data",
+         
+         }
+         }
+         )
+        // .then(
+        //      setValues({
+        //       img: '',
+        //       title: '',
+        //       detail: '',
+        //       date: '',
+        //       time: '',
+        //       location: '',
+        //      })
+        //  )
+         if (!res.ok) {
+          setPublishError(data.message);
+          return;
+        }
     
- 
+        if (res.ok) {
+          setPublishError(null);
+          console.log('ok')
+          // navigate(`/post/${data.slug}`);
+        }
 
-  }else{
-    console.log('false')
-  }
+
+
+
+
+ }
+ catch(err){
+  setPublishError('Something went wrong');
+ }  
+
 }
   return (
     <div className='adminEventPage'>
       <form className='adminEventPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
 
 
-        <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*' required className='eventInputImg' />
-        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" required className='eventInputTitle' />
+        <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='eventInputImg' />
+        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text"  className='eventInputTitle' />
 
         <ReactQuill theme="snow"  onChange={(value) => {
             setValues({ ...values, detail: value });
           }} className='adminEventDetail' />;
         <div className='adminEventTime'>
-          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date" required className='adminEventTimeInupt' />
-          <input onChange={(e) => { handleChange(e) }} value={values.time} name="time" type="time" required className='adminEventTimeInupt' />
+          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminEventTimeInupt' />
+          <input onChange={(e) => { handleChange(e) }} value={values.time} name="time" type="time"  className='adminEventTimeInupt' />
         </div>
-        <input onChange={(e) => { handleChange(e) }} value={values.location} name="location" type="text" placeholder='Location' required className='adminEventLocation' />
+        <input onChange={(e) => { handleChange(e) }} value={values.location} name="location" type="text" placeholder='Location'  className='adminEventLocation' />
 
         <button className="adminEventbtn" type="submit">Create Event</button>
 

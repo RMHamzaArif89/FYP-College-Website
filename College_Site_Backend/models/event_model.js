@@ -19,17 +19,17 @@ const Events= new mongoose.Schema({
     },
     date:{
         type:Date,
-        required:true
+        // required:true
 
     },
     time:{
         type:String,
-        required:true
+        // required:true
 
     },
     location:{
         type:String,
-        required:true
+        // required:true
 
     },
 
