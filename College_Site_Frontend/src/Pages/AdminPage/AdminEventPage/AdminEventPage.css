@@ -89,23 +89,37 @@ input[type=text],input[type=img],input[type=date],input:focus {
 .adminEventCom{
     width: 90%;
     height: auto;
+    margin: 1rem 0;
+}
+.adminEventHeading{
+    font-size: 2.4rem;
+    color: darkred;
+    font-family: 'Roboto','sans-serif';
+}
+.adminEvents{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: .8rem;
     border: .3px solid #c5c0c0;
     padding: 1rem 0;
+    margin: 1rem 0;
+
 }
 .adminEventsRow{
     width: 90%;
     height: 3rem;
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 1.4rem;
     border-bottom: 1px solid lightgray;
     cursor: pointer;
     background: darkred;
     animation: all 1.5s alternate  ease-in;
+    
 }
 .adminEventsRow:hover{
     transform: scale(1.01);
@@ -137,6 +151,14 @@ font-weight: bold;
     font-family: 'Roboto','sans-serif';
 
 }
+.adminBtns{
+    display: flex;
+    gap: .6rem;
+    justify-self: end;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0 .5rem;
+}
 
 .adminEventsIcon{
     font-size: 1.3rem;
@@ -146,4 +168,16 @@ font-weight: bold;
 .adminEventsIcon:hover{
     color: lightcoral;
     cursor: pointer;
+}
+
+.noEvents{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+}
+.loading{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+
 }

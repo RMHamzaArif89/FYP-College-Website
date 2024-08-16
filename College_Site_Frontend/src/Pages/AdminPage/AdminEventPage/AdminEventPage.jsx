@@ -25,7 +25,6 @@ const navigate=useNavigate()
   const handleChange = (e) => {
 
     // e.preventDefault()
-
     let name = e.target.name;
     let val = e.target.value;
 
@@ -72,6 +71,7 @@ const handleSubmit=async(e)=>{
 
 
   try{
+    setLoading(true)
     e.preventDefault()
 
     const formData=new FormData()
@@ -91,6 +91,8 @@ const handleSubmit=async(e)=>{
          
          }
          }
+         ).then(
+          // setLoading(false)
          )
         // .then(
         //      setValues({
@@ -102,14 +104,17 @@ const handleSubmit=async(e)=>{
         //       location: '',
         //      })
         //  )
+        console.log(res)
          if (!res.ok) {
           setPublishError(data.message);
+          setLoading(false)
           return;
         }
     
-        if (res.ok) {
+        if (await res.ok) {
           setPublishError(null);
-          console.log('ok')
+          console.log('ok');
+          setLoading(false)
           // navigate(`/post/${data.slug}`);
         }
 
@@ -120,6 +125,8 @@ const handleSubmit=async(e)=>{
  }
  catch(err){
   setPublishError('Something went wrong');
+ }finally{
+  setLoading(false)
  }  
 
 }
@@ -144,7 +151,11 @@ const handleSubmit=async(e)=>{
 
       </form>
 
-      <AdminEventCom/>
+    {
+      loading?<div className="loading">
+...loading
+      </div>:  <AdminEventCom/>
+    }
 
 
     </div>

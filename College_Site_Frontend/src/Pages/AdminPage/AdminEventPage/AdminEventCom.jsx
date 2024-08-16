@@ -8,6 +8,7 @@ import AdminEventsRow from './AdminEventsRow';
 function AdminEventCom() {
   const [events, setEvents] = useState([]);
   const [publishError,setPublishError]=useState(null)
+  const [loading,setLoading]=useState(false)
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -16,7 +17,7 @@ function AdminEventCom() {
     };
     fetchEvents();
 
-  }, []);
+  }, [loading]);
 
 
 
@@ -25,6 +26,7 @@ function AdminEventCom() {
   const deleteEvent=async(Id)=>{
 
     try{
+      setLoading(true)
       const res = await axios.delete(`http://localhost:5001/api/events/deleteEvent/${Id}`);
       if (!res.ok) {
         setPublishError(data.message);
@@ -41,17 +43,29 @@ function AdminEventCom() {
     catch(e){
        setPublishError('something went wrong')
     }
+    finally{
+      setLoading(false)
+    }
 
 
   }
   return (
     <div className='adminEventCom'>
-      {
-        events.map((event) =>
+      <div className="adminEventHeading">
+        Events
+      </div>
+    <div className="adminEvents">
+  {
+    events.length>0?  (
+      loading?<div className="loading">
+...loading
+      </div>: (events.map((event) =>
           <div className="adminEventsRow">
             <AdminEventsRow event={event} deleteEvent={deleteEvent}/>
-          </div>)
-      }
+          </div>))
+    ):<div className="noEvents">No Events Found</div>
+  }
+    </div>
     </div>
   )
 }
