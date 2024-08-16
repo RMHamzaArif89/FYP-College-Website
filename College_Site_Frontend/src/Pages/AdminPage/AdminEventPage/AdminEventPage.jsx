@@ -9,6 +9,7 @@ import AdminEventCom from './AdminEventCom';
 
 function AdminEventPage() {
   const [publishError,setPublishError]=useState(null)
+  const[loading,setLoading]=useState(false)
   const [values, setValues] = useState({
 
     img: '',

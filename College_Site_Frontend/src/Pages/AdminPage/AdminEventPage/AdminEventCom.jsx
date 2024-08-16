@@ -4,6 +4,7 @@ import axios from 'axios';
 import AdminEventsRow from './AdminEventsRow';
 
 
+
 function AdminEventCom() {
   const [events, setEvents] = useState([]);
   const [publishError,setPublishError]=useState(null)
@@ -14,7 +15,9 @@ function AdminEventCom() {
       setEvents(res.data.events)
     };
     fetchEvents();
+
   }, []);
+
 
 
 

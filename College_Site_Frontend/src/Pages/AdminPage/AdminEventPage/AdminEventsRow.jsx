@@ -3,6 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 
 function AdminEventsRow({ event, deleteEvent }) {
+    
     return (
         <>
             <img src={`http://localhost:5001/${event.img}`} alt="" className="adminEventsImg" />
