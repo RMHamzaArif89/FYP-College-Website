@@ -26,6 +26,7 @@ app.use(express.static('upload'))
 //this is middleWare use to encode the form&body request value //example req.body from form
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.json())
+app.use(express.static('upload'))
 
 
 //routes

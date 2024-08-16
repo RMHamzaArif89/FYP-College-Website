@@ -4,6 +4,8 @@ import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
 import './AdminEventPage.css'
+import AdminEventCom from './AdminEventCom';
+
 
 function AdminEventPage() {
   const [publishError,setPublishError]=useState(null)
@@ -126,7 +128,7 @@ const handleSubmit=async(e)=>{
 
 
         <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='eventInputImg' />
-        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text"  className='eventInputTitle' />
+        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='eventInputTitle' />
 
         <ReactQuill theme="snow"  onChange={(value) => {
             setValues({ ...values, detail: value });
@@ -140,6 +142,8 @@ const handleSubmit=async(e)=>{
         <button className="adminEventbtn" type="submit">Create Event</button>
 
       </form>
+
+      <AdminEventCom/>
 
 
     </div>

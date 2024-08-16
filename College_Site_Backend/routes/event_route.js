@@ -4,7 +4,7 @@ import path from 'path';
 import bodyParser from 'body-parser';
 import multer from 'multer';
 // import { verifyToken } from '../utils/verifyUser.js';
-import {createEvent, getEvents} from '../controllers/event_controller.js'
+import {createEvent, getEvents, deleteEvent} from '../controllers/event_controller.js'
 import { errorHandler } from '../utils/errorHandler.js';
 
 //this is middleWare use to encode the form&body request value //example req.body from form
@@ -30,11 +30,8 @@ const upload = multer({ storage:Storage })
 router.use(express.static('upload'))
 
 router.post('/createEvent',upload.single('img'), createEvent)
-router.post('/getEvents', getEvents)
-
-
-// router.get('/getposts', getposts)
-// router.delete('/deletepost/:postId/:userId', verifyToken, deletepost)
+router.get('/getEvents', getEvents)
+router.delete('/deleteEvent/:eventId', deleteEvent)
 // router.put('/updatepost/:postId/:userId', verifyToken, updatepost)
 
 
