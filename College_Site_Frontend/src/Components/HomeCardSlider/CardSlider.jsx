@@ -30,42 +30,12 @@ function CardSlider() {
   }, []);
 
 
-  return (
 
-    <div className="container">
-      <h1 className="eventHeading">
-        Events
-      </h1>
-      <Swiper
-        effect={'coverflow'}
-        autoplay={{
-          delay: 1500,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false
-          // disableOnInteraction: false
-      }}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 3,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[Autoplay,EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-      >
-  {
-     events.map((event)=>
-     <SwiperSlide className="eventSliderCard" key={event._id}>
+  
+  const slides = [];
+  events.slice(0,5).map(event => (
+    slides.push(
+      <SwiperSlide className="eventSliderCard" key={event._id}>
      <img src={`http://localhost:5001/${event.img}`} alt="" className="eventPageCardImg" />
      {/* <img src={event.img} alt="" className="eventPageCardImg" /> */}
      <div className="eventPageCardText">
@@ -87,20 +57,62 @@ function CardSlider() {
        <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div>
      </div>
    </SwiperSlide>
-     )
+    )
+  ));
 
-  }
 
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
+  return (
+
+    <div className="container">
+      <h1 className="eventHeading">
+        Events
+      </h1>
+   {
+    slides.length>0?(
+      <Swiper
+      effect={'coverflow'}
+      autoplay={{
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false
+        // disableOnInteraction: false
+    }}
+      grabCursor={true}
+      centeredSlides={true}
+      loop={true}
+      slidesPerView={'auto'}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+      }}
+      pagination={{ el: '.swiper-pagination', clickable: true }}
+      navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+      }}
+      modules={[Autoplay,EffectCoverflow, Pagination, Navigation]}
+      className="swiper_container"
+    >
+{
+slides
+
+}
+
+      <div className="slider-controler">
+        <div className="swiper-button-prev slider-arrow">
+          <ion-icon name="arrow-back-outline"></ion-icon>
         </div>
-      </Swiper>
+        <div className="swiper-button-next slider-arrow">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+        <div className="swiper-pagination"></div>
+      </div>
+    </Swiper>
+    ):'...loading'
+   }
       <div className="eventsPageLink">
         <Link to={'/eventsPage'}>Explore More <FaLongArrowAltRight/> </Link>
       </div>
