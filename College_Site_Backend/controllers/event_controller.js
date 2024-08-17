@@ -4,7 +4,7 @@ import eventModel from '../models/event_model.js'
 
 
 
-
+//create event
 export const createEvent = async(req, res, next) => {
     console.log('event real')
     // if (!req.user.isAdmin) {
@@ -33,7 +33,7 @@ export const createEvent = async(req, res, next) => {
 
 
 
-
+//Get events
   export const getEvents=async(req,res,next)=>{
     try {
       const startIndex = parseInt(req.query.startIndex) || 0;
@@ -80,7 +80,7 @@ export const createEvent = async(req, res, next) => {
   }
 
 
-
+//Delete Events
   export const deleteEvent = async (req, res, next) => {
     console.log('enter delete')
     try {
@@ -99,3 +99,7 @@ export const createEvent = async(req, res, next) => {
       next(error);
     }
   };
+
+//update events
+
+

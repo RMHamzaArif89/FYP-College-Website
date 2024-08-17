@@ -11,11 +11,11 @@ function AdminEventCom() {
   const [loading,setLoading]=useState(false)
 
   useEffect(() => {
-    const fetchEvents = async () => {
+    const getEvents = async () => {
       const res = await axios.get('http://localhost:5001/api/events/getEvents');
       setEvents(res.data.events)
     };
-    fetchEvents();
+    getEvents();
 
   }, [loading]);
 

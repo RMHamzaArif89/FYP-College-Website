@@ -1,6 +1,6 @@
-import React from 'react'
-import EventData from './eventData'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import axios from 'axios';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -19,6 +19,15 @@ import {Link} from 'react-router-dom';
 
 
 function CardSlider() {
+  let[events,setEvents]=useState([])
+  useEffect(() => {
+    const getEvents = async () => {
+      const res = await axios.get('http://localhost:5001/api/events/getEvents');
+      setEvents(res.data.events)
+    };
+    getEvents();
+    // console.log(events[0].detail.replace(/\"'/g, " "))
+  }, []);
 
 
   return (
@@ -55,24 +64,25 @@ function CardSlider() {
         className="swiper_container"
       >
   {
-     eventsPageData.map((data)=>
-     <SwiperSlide className="eventSliderCard">
-     <img src={data.img} alt="" className="eventPageCardImg" />
+     events.map((event)=>
+     <SwiperSlide className="eventSliderCard" key={event._id}>
+     <img src={`http://localhost:5001/${event.img}`} alt="" className="eventPageCardImg" />
+     {/* <img src={event.img} alt="" className="eventPageCardImg" /> */}
      <div className="eventPageCardText">
        <div className="eventPageCardHeading title">
-         {data.title}
+         {event.title}
        </div>
        <div className="eventPageCardDet">
-         {data.detail}
+         {/* {event.detail} */}
        </div>
        <div className="eventPageCardPoints date">
-       <WiTime3  className='eventPageCardPointsIcon'/> {data.date}
+       <WiTime3  className='eventPageCardPointsIcon'/> {event.date}
        </div>
        <div className="eventPageCardPoints time">
-      <MdOutlineDateRange className='eventPageCardPointsIcon'/> {data.time}
+      <MdOutlineDateRange className='eventPageCardPointsIcon'/> {event.time}
        </div>
        <div className="eventPageCardPoints locations">
-       <CiLocationOn className='eventPageCardPointsIcon'/> {data.location}
+       <CiLocationOn className='eventPageCardPointsIcon'/> {event.location}
        </div>
        <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div>
      </div>
