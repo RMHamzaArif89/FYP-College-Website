@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 //routes
 import events_Routes from './routes/event_route.js'
+import examNews_Routes from './routes/examNews_route.js'
 
 
 const app=express()
@@ -31,6 +32,7 @@ app.use(express.static('upload'))
 
 //routes
 app.use('/api/events', events_Routes);
+app.use('/api/examNews', examNews_Routes);
 
 //require the db connection
 import ('./db/Connection.js')

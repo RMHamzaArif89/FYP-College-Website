@@ -8,8 +8,8 @@ function SideBarAdmin() {
         <div className="sideBarAdminHeading">Admin Page</div>
         <div className="sideBarAdminLinks">
             <NavLink exact to={''} activeClassName='active'>Home Page Slides</NavLink>
-            <NavLink to={''} activeClassName='active'>Events</NavLink>
-            <NavLink to={''} activeClassName='active'>Exam News</NavLink>
+            <NavLink to={'/adminEventPage'} activeClassName='active'>Events</NavLink>
+            <NavLink to={'/adminExamNewsPage'} activeClassName='active'>Exam News</NavLink>
             <NavLink to={''} activeClassName='active'>Noticeboard</NavLink>
             <NavLink to={''} activeClassName='active'>Contact Page</NavLink>
             <NavLink to={''} activeClassName='active'>Sports Page</NavLink>

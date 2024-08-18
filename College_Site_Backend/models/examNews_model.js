@@ -4,11 +4,11 @@ const examNews= new mongoose.Schema({
     //these are the names of input...name='name'
     semesterName:{
         type:String,
-        required:true
+        // required:true
 
     },
     date:{
-        type:Date,
+        type:String,
         // required:true
 
     },

@@ -7,12 +7,12 @@ function AdminExamNewsRow({ examNews, deleteExamNews }) {
     return (
         <>
            
-            <div className="adminExamNewsTitle">{examNews.semesterName}</div>
-            <div className="adminExamNewsDate">{examNews.date}</div>
-            <div className="adminExamNewsDet">{examNews.detail}</div>
+            <div className="adminEditPageTitle">{examNews.semesterName}</div>
+            <div className="adminEditPageDate">{examNews.date}</div>
+            <div className="adminEditPageDet">{examNews.detail}</div>
           <div className="adminBtns">
-          <div className="adminExamNewsDelete adminEventsIcon" onClick={() => { deleteExamNews(examNews._id) }}> <MdDelete /> </div>
-            <div className="adminExamNewsEdit adminEventsIcon"> <FaEdit /> </div>
+          <div className="adminEditPageDelete adminEditPageIcon" onClick={() => { deleteExamNews(examNews._id) }}> <MdDelete /> </div>
+            <div className="adminEditPageEdit adminEditPageIcon"> <FaEdit /> </div>
           </div>
         </>
     )

@@ -13,9 +13,9 @@ router.use(express.json())
 
 
 
-router.post('/createExamNews',upload.single('img'), createExamNews)
+router.post('/createExamNews', createExamNews)
 router.get('/getExamNews', getExamNews)
-router.delete('/deleteExamNews/:eventId', deleteExamNews)
+router.delete('/deleteExamNews/:examNewsId', deleteExamNews)
 // router.put('/updatepost/:postId/:userId', verifyToken, updatepost)
 
 

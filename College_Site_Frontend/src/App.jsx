@@ -38,52 +38,55 @@ import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
 //admin pages
 import AdminLayout from './Pages/Layout/AdminLayout.jsx'
 import AdminPage from './Pages/AdminPage/AdminPage';
+import AdminEventPage from './Pages/AdminPage/AdminEventPage/AdminEventPage';
+import AdminExamNewsPage from './Pages/AdminPage/AdminExamNews/AdminExamNewsPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
 
-
-   <Route element={<Layout />}>
-   <Route path="/" index element={<Home />} />
-      <Route path='/location' element={<Location />} />
-      <Route path='/quickFacts' element={<QuickFacts />} />
-      <Route path='/sports' element={<Sports />} />
-      <Route path='/history' element={<History />} />
-      <Route path='/programs' element={<Programs />}>
-        <Route path='/programs/'  index element={<BS />}/>
-        <Route path='/programs/bs'  index element={<BS />}/>
-        <Route path='/programs/inter' element={<Inter />} />
+      <Route element={<Layout />}>
+        <Route path="/" index element={<Home />} />
+        <Route path='/location' element={<Location />} />
+        <Route path='/quickFacts' element={<QuickFacts />} />
+        <Route path='/sports' element={<Sports />} />
+        <Route path='/history' element={<History />} />
+        <Route path='/programs' element={<Programs />}>
+          <Route path='/programs/' index element={<BS />} />
+          <Route path='/programs/bs' index element={<BS />} />
+          <Route path='/programs/inter' element={<Inter />} />
+        </Route>
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/examNews' element={<ExamNews />} />
+        <Route path='/rules' element={<RAI />} />
+        <Route path='/studentIns' element={<StudentIns />} />
+        <Route path='/feeStructure' element={<FeeStructure />} />
+        <Route path='/socities' element={<Socities />} />
+        <Route path='/admissionProcess' element={<AdmissionProcess />} />
+        <Route path='/eventsPage' element={<EventsPage />} />
+        <Route path='/GalleryPage' element={<GalleryPage />} />
+        <Route path='/admission' element={<Admission />} />
+        <Route path='/noticeboard' element={<Noticeboard />} />
       </Route>
-      <Route path='/contact' element={<Contact/>}/>
-      <Route path='/examNews' element={<ExamNews/>}/>
-      <Route path='/rules' element={<RAI/>}/>
-      <Route path='/studentIns' element={<StudentIns/>}/>
-      <Route path='/feeStructure' element={<FeeStructure/>}/>
-      <Route path='/socities' element={<Socities/>}/>
-      <Route path='/admissionProcess' element={<AdmissionProcess/>}/>
-      <Route path='/eventsPage' element={<EventsPage/>}/>
-      <Route path='/GalleryPage' element={<GalleryPage/>}/>
-      <Route path='/admission' element={<Admission/>}/>
-      <Route path='/noticeboard' element={<Noticeboard/>}/>
-   </Route>
 
-   <Route element={<AdminLayout/>}>
-<Route path='/adminPage' element={<AdminPage/>}/>
-   </Route>
+      <Route element={<AdminLayout />}>
+        <Route path='/adminPage' element={<AdminPage />} />
+        <Route path='/adminEventPage' element={<AdminEventPage />} />
+        <Route path='/adminExamNewsPage' element={<AdminExamNewsPage />} />
+      </Route>
 
     </Route>
-    
-      ));
 
-      function App() {
+  ));
+
+function App() {
 
 
   return (
-      <>
-        <RouterProvider  router={router}/>
-      </>
-      )
+    <>
+      <RouterProvider router={router} />
+    </>
+  )
 }
 
-      export default App
+export default App

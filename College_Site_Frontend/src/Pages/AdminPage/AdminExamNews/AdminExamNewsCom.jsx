@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 // import navigate from 'react-router-dom'
-import AdminEventsRow from './AdminEventsRow';
+import AdminExamNewsRow from './AdminExamNewsRow';
 
 
 
@@ -50,20 +50,20 @@ function AdminExamNewsCom() {
 
   }
   return (
-    <div className='admiExamNewsCom'>
-      <div className="admiExamNewsHeading">
+    <div className='adminEditPageCom'>
+      <div className="adminEditPageHeading">
         ExamNews
       </div>
-    <div className="adminExamNews">
+    <div className="adminEditPage">
   {
     examNews.length>0?  (
       loading?<div className="loading">
 ...loading
-      </div>: (examNews.map((event) =>
-          <div className="adminExamNewsRow">
-            <AdminEventsRow examNews={examNews} deleteExamNews={deleteExamNews}/>
+      </div>: (examNews.map((examNews) =>
+          <div className="adminEditPageRow">
+            <AdminExamNewsRow examNews={examNews} deleteExamNews={deleteExamNews}/>
           </div>))
-    ):<div className="noExamNews">No Events Found</div>
+    ):<div className="noEditPage">No Events Found</div>
   }
     </div>
     </div>

@@ -1,6 +1,6 @@
 import  express  from "express";
 import { errorHandler } from "../utils/errorHandler.js";
-import examNewsModel from "../models/examNews_model.js";
+import examNewsModel from "../models/examNews_model.js"
 
 
 
@@ -10,9 +10,8 @@ export const createExamNews = async(req, res, next) => {
     // if (!req.user.isAdmin) {
     //   return next(errorHandler(403, 'You are not allowed to create a post'));
     // }
-  
 
-    if (!req.body.semeserName || !req.body.detail) {
+    if (!req.body.semesterName || !req.body.detail) {
       return next(errorHandler(400, 'Please provide all required fields'));
     }
 
@@ -22,7 +21,7 @@ export const createExamNews = async(req, res, next) => {
     });
     try {
       const savedExamNews = await newExamNews.save();
-      res.status(201).json({savedEvent,message:'Successfully created'});
+      res.status(201).json({savedExamNews,message:'Successfully created'});
     } catch (error) {
       next(error);
     }

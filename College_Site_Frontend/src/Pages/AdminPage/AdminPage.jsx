@@ -4,10 +4,11 @@ import './adminPage.css'
 
 function AdminPage() {
   return (
-    <div className='adminPage'>
-        <AdminEventPage/>
+    // <div className='adminPage'>
+    //     <AdminEventPage/>
       
-    </div>
+    // </div>
+    ''
   )
 }
 

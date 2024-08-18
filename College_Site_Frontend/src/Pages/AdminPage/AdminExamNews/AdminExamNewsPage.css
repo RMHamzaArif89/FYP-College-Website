@@ -1,4 +1,4 @@
-.adminPage{
+.adminEditPage{
     width: 100%;
     height: calc(100vh - 3rem);
     display: flex;
@@ -7,7 +7,7 @@
     padding:2rem 0;
     overflow-x: hidden;
 }
-.adminPageForm{
+.adminEditPageForm{
     width:80%;
     height:auto;
     display:flex;
@@ -27,28 +27,28 @@ input[type=text],input[type=date],input:focus {
     outline:none;
     
   }
-.adminPageForm .InputTitle{
+.adminEditPageForm .adminEditPageTitleInp{
     width:80%;
     height:2rem;
     font-size:1.2rem;
     color:darkred;
     padding:.6rem .4rem;
 }
-.adminTimeInupt{
-    width:49%;
+.adminEditPageDateInp{
+    width:80%;
     color:darkred;
     font-size:1rem;
     font-family:'Roboto','sans-serif';
     padding:.3rem;
 }
-.adminPageForm .quill{
+.adminEditPageForm .quill{
     width: 80%;
     font-size:1.2rem;
     color:darkred;
     border-radius:8px;
     outline:none;
 }
-.adminPageForm .adminbtn{
+.adminEditPageForm .adminEditPagebtn{
     padding: .6rem 1.3rem;
     border-radius: 4px;
     background: linear-gradient(145deg,darkred,darkgray);
@@ -66,17 +66,17 @@ input[type=text],input[type=date],input:focus {
 
 
 
-.adminCom{
+.adminEditPageCom{
     width: 90%;
     height: auto;
     margin: 1rem 0;
 }
-.adminHeading{
+.adminEditPageHeading{
     font-size: 2.4rem;
     color: darkred;
     font-family: 'Roboto','sans-serif';
 }
-.adminExamNews{
+.adminEditPage{
     width: 100%;
     height: 100%;
     display: flex;
@@ -88,7 +88,7 @@ input[type=text],input[type=date],input:focus {
     margin: 1rem 0;
 
 }
-.adminExamNewsRow{
+.adminEditPageRow{
     width: 90%;
     height: 3rem;
     display: flex;
@@ -101,27 +101,27 @@ input[type=text],input[type=date],input:focus {
     animation: all 1.5s alternate  ease-in;
     
 }
-.adminExamNewsRow:hover{
+.adminEditPageRow:hover{
     transform: scale(1.01);
 }
 
 
-.adminExamNewsTitle{
+.adminEditPageTitle{
  font-size: 1.3rem;
  color:white;
  font-family: 'Roboto','sans-serif';
 }
-.adminExamNewsDate{
+.adminEditPageDate{
 font-size: 1rem;
 color: white;
 font-weight: bold;
 }
-.adminExamNewsDet{
+.adminEditPageDet{
     font-size: 1.1rem;
     font-family: 'Roboto','sans-serif';
     color: white;
 }
-.adminBtns{
+.adminEidtPageBtns{
     display: flex;
     gap: .6rem;
     justify-self: end;
@@ -130,17 +130,17 @@ font-weight: bold;
     padding: 0 .5rem;
 }
 
-.adminExamNewsIcon{
+.adminEditPageIcon{
     font-size: 1.3rem;
     color: white;
 }
 
-.adminExamNewsIcon:hover{
+.adminEditPageIcon:hover{
     color: lightcoral;
     cursor: pointer;
 }
 
-.noExamNews{
+.noEditPage{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Roboto','sans-serif';

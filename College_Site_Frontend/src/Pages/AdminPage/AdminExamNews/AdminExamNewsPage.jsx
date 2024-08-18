@@ -44,12 +44,12 @@ const handleSubmit=async(e)=>{
     formData.append("detail",values.detail)
     formData.append("date",values.date)
 
-
+    console.log(values)
     const res=await axios.post(
       'http://localhost:5001/api/examNews/createExamNews',
          formData,{
          headers:{
-           "Content-Type":"multipart/form-data",
+          "Content-Type":"application/json",
          
          }
          }
@@ -96,19 +96,17 @@ const handlePostSubmit = async (e) => {
         `http://localhost:5001/api/examNews/updatepost/${formData._id}`,
            formData,{
            headers:{
-             "Content-Type":"multipart/form-data",
+             "Content-Type":"application/json",
            
            }
            }
            )
           .then(
                setValues({
-                img: '',
                 semesterName: '',
                 detail: '',
                 date: '',
-                time: '',
-                location: '',
+               
                })
            )
   
@@ -120,19 +118,19 @@ const handlePostSubmit = async (e) => {
    }  
 };
   return (
-    <div className='adminExamNewsPage'>
-      <form className='adminExamNewsPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
-      <div className="adminExamNewsHeading">Create Exam News</div>
+    <div className='adminEditPage'>
+      <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }}>
+      <div className="adminEditPageHeading">Create Exam News</div>
 
-        <input onChange={(e) => { handleChange(e) }} value={values.semesterName} name="semesterName" type="text" placeholder='Title'  className='eventInputTitle' />
+        <input onChange={(e) => { handleChange(e) }} value={values.semesterName} name="semesterName" type="text" placeholder='Semester Name'  className='adminEditPageTitleInp' />
 
         <ReactQuill theme="snow"  onChange={(value) => {
             setValues({ ...values, detail: value });
-          }} className='adminExamNewsDetail' placeholder="Detail" 
+          }} className='adminEditPageDetail' placeholder="Detail" 
           />;
-          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminExamNewsTimeInupt' />
+          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminEditPageDateInp' />
 
-        <button className="adminExamNewsbtn" type="submit">Create ExamNews</button>
+        <button className="adminEditPagebtn" type="submit">Create ExamNews</button>
 
       </form>
 
