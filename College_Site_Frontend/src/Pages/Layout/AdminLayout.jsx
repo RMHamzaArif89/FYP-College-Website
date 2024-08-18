@@ -10,9 +10,9 @@ function AdminLayout() {
  <TopBarAdmin/>
 <div className="adminContainer">
 <SideBarAdmin/>
-<div className="adminPage">
+
 <Outlet/>
-</div>
+
 </div>
 
  </>

@@ -9,7 +9,7 @@ function AdminExamNewsRow({ examNews, deleteExamNews }) {
            
             <div className="adminEditPageTitle">{examNews.semesterName}</div>
             <div className="adminEditPageDate">{examNews.date}</div>
-            <div className="adminEditPageDet">{examNews.detail}</div>
+            <div className='adminEditPageDet'  dangerouslySetInnerHTML={{__html:examNews.detail}}   />
           <div className="adminBtns">
           <div className="adminEditPageDelete adminEditPageIcon" onClick={() => { deleteExamNews(examNews._id) }}> <MdDelete /> </div>
             <div className="adminEditPageEdit adminEditPageIcon"> <FaEdit /> </div>

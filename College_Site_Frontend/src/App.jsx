@@ -40,6 +40,7 @@ import AdminLayout from './Pages/Layout/AdminLayout.jsx'
 import AdminPage from './Pages/AdminPage/AdminPage';
 import AdminEventPage from './Pages/AdminPage/AdminEventPage/AdminEventPage';
 import AdminExamNewsPage from './Pages/AdminPage/AdminExamNews/AdminExamNewsPage';
+import AdminNoticePage from './Pages/AdminPage/AdminNoticePage/AdminNoticePage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -73,6 +74,7 @@ const router = createBrowserRouter(
         <Route path='/adminPage' element={<AdminPage />} />
         <Route path='/adminEventPage' element={<AdminEventPage />} />
         <Route path='/adminExamNewsPage' element={<AdminExamNewsPage />} />
+        <Route path='/adminNoticePage' element={<AdminNoticePage />} />
       </Route>
 
     </Route>

@@ -20,7 +20,7 @@
 
 
 .examCard{
-    min-height: 40%;
+    min-height: 45%;
     max-width: auto;
     min-height: 14rem;
     max-height: auto;
@@ -32,13 +32,14 @@
     background:white;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(106, 102, 102, 0.12) 0px 4px 6px, rgba(111, 109, 109, 0.17) 0px 12px rgba(111, 108, 108, 0.09) 0px -3px 5px;
+    text-align: center;
 }
 .examCard:nth-child(2){
-    width: 55%;
+    width: 50%;
    
 }
 .examCard:nth-child(3){
-    width: 55%;
+    width: 50%;
     
 }
 .examCard .semesterHeading{
@@ -138,4 +139,10 @@
     width: 2.4rem;
     height: 2.4rem;
     object-fit: cover;
+}
+
+.noDataFoundImgExamNews{
+    width:50rem;
+    height: 35rem;
+    object-fit: contain;
 }

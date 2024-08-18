@@ -57,7 +57,7 @@ function EventsPage() {
     
               )
             })
-           ): <img src="/images/noEventsFoundImg.jpg" className='noEventsFoundImg' alt="img here" />
+           ): <img src="/images/noDataFoundImg.jpg" className='noDataFoundImg' alt="img here" />
          }
         </div>
       </div>
