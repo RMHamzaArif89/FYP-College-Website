@@ -35,6 +35,7 @@ import Admission from './Pages/Admission/Admission';
 import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
 
 
+
 //admin pages
 import AdminLayout from './Pages/Layout/AdminLayout.jsx'
 import AdminPage from './Pages/AdminPage/AdminPage';
@@ -42,6 +43,7 @@ import AdminEventPage from './Pages/AdminPage/AdminEventPage/AdminEventPage';
 import AdminExamNewsPage from './Pages/AdminPage/AdminExamNews/AdminExamNewsPage';
 import AdminNoticePage from './Pages/AdminPage/AdminNoticePage/AdminNoticePage';
 import AdminSportsNewsPage from './Pages/AdminPage/AdminSportsPage/AdminSportsPage';
+import AdminHomeSliderPage from './Pages/AdminPage/AdminHomeSliderPage/AdminHomeSliderPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -77,6 +79,7 @@ const router = createBrowserRouter(
         <Route path='/adminExamNewsPage' element={<AdminExamNewsPage />} />
         <Route path='/adminNoticePage' element={<AdminNoticePage />} />
         <Route path='/adminSportsNewsPage' element={<AdminSportsNewsPage />} />
+        <Route path='/adminHomeSliderPage' element={<AdminHomeSliderPage />} />
 
       </Route>
 

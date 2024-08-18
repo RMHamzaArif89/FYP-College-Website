@@ -12,7 +12,7 @@ export const createHomeSlider = async(req, res, next) => {
     // }
   
 
-    if (!req.file.fileName) {
+    if (!req.file.filename) {
       return next(errorHandler(400, 'Please provide all required fields'));
     }
 

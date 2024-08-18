@@ -38,7 +38,7 @@ app.use('/api/events', events_Routes);
 app.use('/api/examNews', examNews_Routes);
 app.use('/api/notice', notice_Routes);
 app.use('/api/sportsNews', sportsNews_Routes);
-app.use('/api/sportsNews', homeSlider_Routes);
+app.use('/api/homeSlider', homeSlider_Routes);
 
 //require the db connection
 import ('./db/Connection.js')

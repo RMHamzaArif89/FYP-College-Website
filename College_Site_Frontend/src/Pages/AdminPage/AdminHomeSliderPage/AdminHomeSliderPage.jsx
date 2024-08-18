@@ -3,19 +3,19 @@ import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
-import AdminSportsNewsCom from './AdminSportsPageCom';
+import AdminHomeSliderCom from './AdminHomeSliderPageCom';
 import '../adminEditPage.css'
 
 
-function AdminSportsNewsPage() {
+function AdminHomeSliderPage() {
   const [publishError,setPublishError]=useState(null)
   const[loading,setLoading]=useState(false)
   const [values, setValues] = useState({
 
     img: '',
-    title: '',
-    detail: '',
-    date:'',
+    heading: '',
+    subHeading: '',
+
 
   })
 const navigate=useNavigate()
@@ -43,14 +43,14 @@ const handleSubmit=async(e)=>{
 
     const formData=new FormData()
     formData.append("img",values.img)
-    formData.append("title",values.title)
-    formData.append("detail",values.detail)
+    formData.append("heading",values.heading)
+    formData.append("subHeading",values.subHeading)
     formData.append("date",values.date)
 
 
 
     const res=await axios.post(
-      'http://localhost:5001/api/sportsNews/createSportsNews',
+      'http://localhost:5001/api/homeSlider/createHomeSlider',
          formData,{
          headers:{
            "Content-Type":"multipart/form-data",
@@ -61,9 +61,9 @@ const handleSubmit=async(e)=>{
         // .then(
         //      setValues({
         //       img: '',
-        //       title: '',
-        //       detail: '',
-        //       date: '',
+        //       heading: '',
+        //       subHeading: '',
+        //       
         //      })
         //  )
 
@@ -128,26 +128,21 @@ const handlePostSubmit = async (e) => {
   return (
     <div className='adminPageEdit'>
       <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
-      <div className="adminEditPageHeading">Create Sports News</div>
+      <div className="adminEditPageHeading">Create Home Slider</div>
 
         <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='adminEditPageImgInp' />
-        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
-        <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"   className='adminEditPageDateInp' />
-
-        <ReactQuill theme="snow"  onChange={(value) => {
-            setValues({ ...values, detail: value });
-          }} className='adminEditPageDetail' placeholder="Detail" 
-          />;
+        <input onChange={(e) => { handleChange(e) }} value={values.heading} name="heading" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
+        <input onChange={(e) => { handleChange(e) }} value={values.subHeading} name="subHeading" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
     
 
-        <button className="adminEditPagebtn" type="submit">Create Sports News</button>
+        <button className="adminEditPagebtn" type="submit">Create Home Slider</button>
 
       </form>
 
     {
       loading?<div className="loading">
 ...loading
-      </div>:  <AdminSportsNewsCom/>
+      </div>:  <AdminHomeSliderCom/>
     }
 
 
@@ -155,4 +150,4 @@ const handlePostSubmit = async (e) => {
   )
 }
 
-export default AdminSportsNewsPage
+export default AdminHomeSliderPage
