@@ -1,0 +1,202 @@
+.adminEventPage{
+    width: 100%;
+    height: calc(100vh - 3rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:2rem 0;
+    overflow-x: hidden;
+}
+.adminEventPageForm{
+    width:80%;
+    height:auto;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    gap:1rem;
+}
+input::placeholder {
+    color: darkred;
+  
+  }
+  input{
+    border: .3px solid #c5c0c0;
+  }
+
+.adminEventPageForm .eventInputImg{
+    width:80%;
+    height:3.2rem;
+    border:1px dashed gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    padding: .8rem .5rem;
+}
+input[type="file"]::file-selector-button {
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto','sans-serif';
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    position: absolute;
+    right: 1rem;
+    bottom: .3rem;
+}
+input[type=text],input[type=img],input[type=date],input:focus {
+    outline:none;
+    
+  }
+.adminEventPageForm .eventInputTitle{
+    width:80%;
+    height:2rem;
+    font-size:1.2rem;
+    color:darkred;
+    padding:.6rem .4rem;
+}
+.adminEventPageForm .adminEventTime{
+    display:flex;
+    width:80%;
+    height:2rem;
+    align-items:center;
+    gap:1rem;
+}
+.adminEventTimeInupt{
+    width:49%;
+    color:darkred;
+    font-size:1rem;
+    font-family:'Roboto','sans-serif';
+    padding:.3rem;
+}
+.adminEventPageForm .adminEventLocation{
+    width:80%;
+    height:2rem;
+    font-size:1.2rem;
+    color:darkred;
+    padding:.6rem .4rem;
+}
+
+.adminEventPageForm .quill{
+    width: 80%;
+    font-size:1.2rem;
+    color:darkred;
+    border-radius:8px;
+    outline:none;
+}
+.adminEventPageForm .adminEventbtn{
+    padding: .6rem 1.3rem;
+    border-radius: 4px;
+    background: linear-gradient(145deg,darkred,darkgray);
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Roboto','sans-serif';
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.adminEventCom{
+    width: 90%;
+    height: auto;
+    margin: 1rem 0;
+}
+.adminEventHeading{
+    font-size: 2.4rem;
+    color: darkred;
+    font-family: 'Roboto','sans-serif';
+}
+.adminEvents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+    border: .3px solid #c5c0c0;
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+}
+.adminEventsRow{
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.4rem;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    background: darkred;
+    animation: all 1.5s alternate  ease-in;
+    
+}
+.adminEventsRow:hover{
+    transform: scale(1.01);
+}
+
+.adminEventsRow .adminEventsImg{
+    height: 100%;
+    width: 3rem;
+    object-fit: cover;
+}
+.adminEventsTitle{
+ font-size: 1.3rem;
+ color:white;
+ font-family: 'Roboto','sans-serif';
+}
+.adminEventsDate{
+font-size: 1rem;
+color: white;
+font-weight: bold;
+}
+.adminEventsTime {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto','sans-serif';
+}
+ .adminEventsLocation{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto','sans-serif';
+
+}
+.adminBtns{
+    display: flex;
+    gap: .6rem;
+    justify-self: end;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0 .5rem;
+}
+
+.adminEventsIcon{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.adminEventsIcon:hover{
+    color: lightcoral;
+    cursor: pointer;
+}
+
+.noEvents{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+}
+.loading{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+
+}
