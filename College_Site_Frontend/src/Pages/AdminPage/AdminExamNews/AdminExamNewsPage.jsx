@@ -118,7 +118,7 @@ const handlePostSubmit = async (e) => {
    }  
 };
   return (
-    <div className='adminEditPage'>
+    <div className='adminPageEdit'>
       <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }}>
       <div className="adminEditPageHeading">Create Exam News</div>
 

@@ -7,7 +7,7 @@ function AdminNoticeRow({ notice, deleteNotice }) {
     return (
         <>
            <img src={`http://localhost:5001/${notice.img}`} alt="" className="adminEditPageImg" />
-            <div className="adminEditPageTitle">{notice.semesterName}</div> 
+            <div className="adminEditPageTitle">{notice.title}</div> 
             <div className='adminEditPageDet'  dangerouslySetInnerHTML={{__html:notice.detail}}   />
           <div className="adminBtns">
           <div className="adminEditPageDelete adminEditPageIcon" onClick={() => { deleteNotice(notice._id) }}> <MdDelete /> </div>

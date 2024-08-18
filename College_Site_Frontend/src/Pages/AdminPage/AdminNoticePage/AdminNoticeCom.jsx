@@ -7,8 +7,8 @@ import AdminNoticeRow from './AdminNoticeRow';
 
 function AdminNoticeCom() {
   const [notice, setNotice] = useState([]);
-  const [publishError,setPublishError]=useState(null)
-  const [loading,setLoading]=useState(false)
+  const [publishError, setPublishError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const getNotice = async () => {
@@ -23,16 +23,16 @@ function AdminNoticeCom() {
 
 
 
-  const deleteNotice=async(Id)=>{
+  const deleteNotice = async (Id) => {
 
-    try{
+    try {
       setLoading(true)
       const res = await axios.delete(`http://localhost:5001/api/notice/deleteNotice/${Id}`);
       if (!res.ok) {
         setPublishError(data.message);
         return;
       }
-  
+
       if (res.ok) {
         setPublishError(null);
         console.log('ok')
@@ -40,10 +40,10 @@ function AdminNoticeCom() {
       }
 
     }
-    catch(e){
-       setPublishError('something went wrong')
+    catch (e) {
+      setPublishError('something went wrong')
     }
-    finally{
+    finally {
       setLoading(false)
     }
 
@@ -52,20 +52,20 @@ function AdminNoticeCom() {
   return (
     <div className='adminEditPageCom'>
       <div className="adminEditPageHeading">
-        ExamNews
+        Notice
       </div>
-    <div className="adminEditPage">
-  {
-    notice.length>0?  (
-      loading?<div className="loading">
-...loading
-      </div>: (notice.map((notice) =>
-          <div className="adminEditPageRow">
-            <AdminNoticeRow notice={notice} deleteNotice={deleteNotice}/>
-          </div>))
-    ):<div className="noEditPage">No Notice Found</div>
-  }
-    </div>
+      <div className="adminEditPageRows">
+        {
+          notice.length > 0 ? (
+            loading ? <div className="loading">
+              ...loading
+            </div> : (notice.map((notice) =>
+              <div className="adminEditPageRow">
+                <AdminNoticeRow notice={notice} deleteNotice={deleteNotice} />
+              </div>))
+          ) : <div className="noEditPage">No Notice Found</div>
+        }
+      </div>
     </div>
   )
 }

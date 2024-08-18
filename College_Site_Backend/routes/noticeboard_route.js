@@ -31,7 +31,7 @@ router.use(express.static('upload'))
 
 router.post('/createNotice',upload.single('img'), createNotice)
 router.get('/getNotice', getNotice)
-router.delete('/deleteNotice/:NoticeId', deleteNotice)
+router.delete('/deleteNotice/:noticeId', deleteNotice)
 // router.put('/updatepost/:postId/:userId', verifyToken, updatepost)
 
 

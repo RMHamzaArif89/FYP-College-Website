@@ -7,8 +7,8 @@ import AdminExamNewsRow from './AdminExamNewsRow';
 
 function AdminExamNewsCom() {
   const [examNews, setExamNews] = useState([]);
-  const [publishError,setPublishError]=useState(null)
-  const [loading,setLoading]=useState(false)
+  const [publishError, setPublishError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const getExamNews = async () => {
@@ -23,16 +23,16 @@ function AdminExamNewsCom() {
 
 
 
-  const deleteExamNews=async(Id)=>{
+  const deleteExamNews = async (Id) => {
 
-    try{
+    try {
       setLoading(true)
       const res = await axios.delete(`http://localhost:5001/api/examNews/deleteExamNews/${Id}`);
       if (!res.ok) {
         setPublishError(data.message);
         return;
       }
-  
+
       if (res.ok) {
         setPublishError(null);
         console.log('ok')
@@ -40,10 +40,10 @@ function AdminExamNewsCom() {
       }
 
     }
-    catch(e){
-       setPublishError('something went wrong')
+    catch (e) {
+      setPublishError('something went wrong')
     }
-    finally{
+    finally {
       setLoading(false)
     }
 
@@ -54,18 +54,18 @@ function AdminExamNewsCom() {
       <div className="adminEditPageHeading">
         ExamNews
       </div>
-    <div className="adminEditPage">
-  {
-    examNews.length>0?  (
-      loading?<div className="loading">
-...loading
-      </div>: (examNews.map((examNews) =>
-          <div className="adminEditPageRow">
-            <AdminExamNewsRow examNews={examNews} deleteExamNews={deleteExamNews}/>
-          </div>))
-    ):<div className="noEditPage">No Events Found</div>
-  }
-    </div>
+      <div className="adminEditPage">
+        {
+          examNews.length > 0 ? (
+            loading ? <div className="loading">
+              ...loading
+            </div> : (examNews.map((examNews) =>
+              <div className="adminEditPageRow">
+                <AdminExamNewsRow examNews={examNews} deleteExamNews={deleteExamNews} />
+              </div>))
+          ) : <div className="noEditPage">No Events Found</div>
+        }
+      </div>
     </div>
   )
 }

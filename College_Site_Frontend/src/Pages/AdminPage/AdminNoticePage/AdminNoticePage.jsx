@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
-import './adminNoticePage.css'
 import AdminNoticeCom from './AdminNoticeCom';
+import './adminNoticePage.css'
 
 
 function AdminNoticePage() {
@@ -123,9 +123,9 @@ const handlePostSubmit = async (e) => {
    }  
 };
   return (
-    <div className='adminEditPage'>
+    <div className='adminPageEdit'>
       <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
-      <div className="adminEditPageHeading">Create Event</div>
+      <div className="adminEditPageHeading">Create Notice</div>
 
         <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='adminEditPageImgInp' />
         <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
