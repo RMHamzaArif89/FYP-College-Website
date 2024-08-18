@@ -4,7 +4,7 @@ import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
 import AdminNoticeCom from './AdminNoticeCom';
-import './adminNoticePage.css'
+import '../adminEditPage.css'
 
 
 function AdminNoticePage() {

@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 // import navigate from 'react-router-dom'
-import AdminExamNewsRow from './AdminExamNewsRow';
+import AdminSportsNewsRow from './AdminSportsPageRow';
 
 
 
-function AdminExamNewsCom() {
-  const [examNews, setExamNews] = useState([]);
+function AdminSportsNewsCom() {
+  const [sportsNews, setNotice] = useState([]);
   const [publishError, setPublishError] = useState(null)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    const getExamNews = async () => {
-      const res = await axios.get('http://localhost:5001/api/examNews/getExamNews');
-      setExamNews(res.data.examNews)
+    const getSportsNews = async () => {
+      const res = await axios.get('http://localhost:5001/api/sportsNews/getSportsNews');
+      setNotice(res.data.sportsNews)
     };
-    getExamNews();
+    getSportsNews();
 
   }, [loading]);
 
@@ -23,11 +23,11 @@ function AdminExamNewsCom() {
 
 
 
-  const deleteExamNews = async (Id) => {
+  const deleteNotice = async (Id) => {
 
     try {
       setLoading(true)
-      const res = await axios.delete(`http://localhost:5001/api/examNews/deleteExamNews/${Id}`);
+      const res = await axios.delete(`http://localhost:5001/api/sportsNews/deleteSportsNews/${Id}`);
       if (!res.ok) {
         setPublishError(data.message);
         return;
@@ -52,22 +52,22 @@ function AdminExamNewsCom() {
   return (
     <div className='adminEditPageCom'>
       <div className="adminEditPageHeading">
-        ExamNews
+        Sports News
       </div>
       <div className="adminEditPageRows">
         {
-          examNews.length > 0 ? (
+          sportsNews.length > 0 ? (
             loading ? <div className="loading">
               ...loading
-            </div> : (examNews.map((examNews) =>
+            </div> : (sportsNews.map((sportsNews) =>
               <div className="adminEditPageRow">
-                <AdminExamNewsRow examNews={examNews} deleteExamNews={deleteExamNews} />
+                <AdminSportsNewsRow sportsNews={sportsNews} deleteNotice={deleteNotice} />
               </div>))
-          ) : <div className="noEditPage">No Exam News Found</div>
+          ) : <div className="noEditPage">No Sports News Found</div>
         }
       </div>
     </div>
   )
 }
 
-export default AdminExamNewsCom
+export default AdminSportsNewsCom

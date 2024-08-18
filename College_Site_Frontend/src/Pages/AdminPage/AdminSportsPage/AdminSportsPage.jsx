@@ -3,18 +3,20 @@ import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
+import AdminSportsNewsCom from './AdminSportsPageCom';
 import '../adminEditPage.css'
-import AdminExamNewsCom from './AdminExamNewsCom';
 
 
-function AdminExamNewsPage() {
+function AdminSportsNewsPage() {
   const [publishError,setPublishError]=useState(null)
   const[loading,setLoading]=useState(false)
   const [values, setValues] = useState({
 
-    semesterName: '',
+    img: '',
+    title: '',
     detail: '',
-    date: '',
+    date:'',
+
   })
 const navigate=useNavigate()
 
@@ -40,23 +42,26 @@ const handleSubmit=async(e)=>{
     e.preventDefault()
 
     const formData=new FormData()
-    formData.append("semesterName",values.semesterName)
+    formData.append("img",values.img)
+    formData.append("title",values.title)
     formData.append("detail",values.detail)
     formData.append("date",values.date)
 
-    console.log(values)
+
+console.log(values)
     const res=await axios.post(
-      'http://localhost:5001/api/examNews/createExamNews',
+      'http://localhost:5001/api/sportsNews/createSportsNews',
          formData,{
          headers:{
-          "Content-Type":"application/json",
+           "Content-Type":"multipart/form-data",
          
          }
          }
          )
         // .then(
         //      setValues({
-        //       semesterName: '',
+        //       img: '',
+        //       title: '',
         //       detail: '',
         //       date: '',
         //      })
@@ -86,27 +91,30 @@ const handlePostSubmit = async (e) => {
       e.preventDefault()
   
       const formData=new FormData()
-      formData.append("semesterName",values.semesterName)
-      formData.append("date",values.date)
+      formData.append("img",values.img)
+      formData.append("title",values.title)
       formData.append("detail",values.detail)
+      formData.append("date",values.date)
+
   
   
       const res=await axios.post(
         '/createEvent',
-        `http://localhost:5001/api/examNews/updatepost/${formData._id}`,
+        `http://localhost:5001/api/events/updatepost/${formData._id}`,
            formData,{
            headers:{
-             "Content-Type":"application/json",
+             "Content-Type":"multipart/form-data",
            
            }
            }
            )
           .then(
                setValues({
-                semesterName: '',
+                img: '',
+                title: '',
                 detail: '',
                 date: '',
-               
+                
                })
            )
   
@@ -119,25 +127,27 @@ const handlePostSubmit = async (e) => {
 };
   return (
     <div className='adminPageEdit'>
-      <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }}>
-      <div className="adminEditPageHeading">Create Exam News</div>
+      <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
+      <div className="adminEditPageHeading">Create Sports News</div>
 
-        <input onChange={(e) => { handleChange(e) }} value={values.semesterName} name="semesterName" type="text" placeholder='Semester Name'  className='adminEditPageTitleInp' />
+        <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='adminEditPageImgInp' />
+        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
+        <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"   className='adminEditPageDateInp' />
 
         <ReactQuill theme="snow"  onChange={(value) => {
             setValues({ ...values, detail: value });
           }} className='adminEditPageDetail' placeholder="Detail" 
           />;
-          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminEditPageDateInp' />
+    
 
-        <button className="adminEditPagebtn" type="submit">Create ExamNews</button>
+        <button className="adminEditPagebtn" type="submit">Create Sports News</button>
 
       </form>
 
     {
       loading?<div className="loading">
 ...loading
-      </div>:  <AdminExamNewsCom/>
+      </div>:  <AdminSportsNewsCom/>
     }
 
 
@@ -145,4 +155,4 @@ const handlePostSubmit = async (e) => {
   )
 }
 
-export default AdminExamNewsPage
+export default AdminSportsNewsPage

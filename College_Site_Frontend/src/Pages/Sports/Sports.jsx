@@ -1,13 +1,26 @@
-import React from 'react'
-import { SportsCubeData, sportsNews } from './sportsData';
+import React, { useEffect, useState } from 'react'
+import { SportsCubeData} from './sportsData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Autoplay, Pagination , EffectCube} from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import './sports.css'
 import SportsGallery from './SportsGallery';
+import axios from 'axios'
 
 function Sports() {
+  const [sportsNews, setNotice] = useState([]);
+  const [publishError, setPublishError] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const getSportsNews = async () => {
+      const res = await axios.get('http://localhost:5001/api/sportsNews/getSportsNews');
+      setNotice(res.data.sportsNews)
+    };
+    getSportsNews();
+  },[])
+
   return (
     <div className='sports'>
       <div className="sportsCon">
@@ -57,11 +70,11 @@ function Sports() {
             sportsNews.map((data)=>{
               return(
                 <div className="sportsCol1Card">
-                <img src={data.img} alt="" className="sportsCol1CardImg" />
+                <img src={`http://localhost:5001/${data.img}`} alt="" className="sportsCol1CardImg" />
                 <div className="sportsCol1Text">
-                  <div className="sportsCol1Title">{data.heading}</div>
+                  <div className="sportsCol1Title">{data.title}</div>
                   <div className="sportsCol1Date">{data.date}</div>
-                  <div className="sportsCol1Detail">{data.text}</div>
+                  <div className="sportsCol1Detail"  dangerouslySetInnerHTML={{__html:data.detail}}   />
                 </div>
                 </div>
               )

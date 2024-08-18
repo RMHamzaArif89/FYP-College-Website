@@ -12,7 +12,7 @@ function SideBarAdmin() {
             <NavLink to={'/adminExamNewsPage'} activeClassName='active'>Exam News</NavLink>
             <NavLink to={'/adminNoticePage'} activeClassName='active'>Noticeboard</NavLink>
             <NavLink to={''} activeClassName='active'>Contact Page</NavLink>
-            <NavLink to={''} activeClassName='active'>Sports Page</NavLink>
+            <NavLink to={'/adminSportsNewsPage'} activeClassName='active'>Sports Page</NavLink>
         </div>
       
     </div>
