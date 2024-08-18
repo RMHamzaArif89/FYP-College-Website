@@ -7,7 +7,7 @@ function SideBarAdmin() {
     <div className='sideBarAdmin'>
         <div className="sideBarAdminHeading">Admin Page</div>
         <div className="sideBarAdminLinks">
-            <NavLink exact to={''} activeClassName='active'>Home Page Slides</NavLink>
+            <NavLink exact to={'/adminHomePageSlides'} activeClassName='active'>Home Page Slides</NavLink>
             <NavLink to={'/adminEventPage'} activeClassName='active'>Events</NavLink>
             <NavLink to={'/adminExamNewsPage'} activeClassName='active'>Exam News</NavLink>
             <NavLink to={'/adminNoticePage'} activeClassName='active'>Noticeboard</NavLink>
