@@ -1,4 +1,4 @@
-.adminEventPage{
+.adminPage{
     width: 100%;
     height: calc(100vh - 3rem);
     display: flex;
@@ -7,7 +7,7 @@
     padding:2rem 0;
     overflow-x: hidden;
 }
-.adminEventPageForm{
+.adminPageForm{
     width:80%;
     height:auto;
     display:flex;
@@ -23,71 +23,32 @@ input::placeholder {
     border: .3px solid #c5c0c0;
   }
 
-.adminEventPageForm .eventInputImg{
-    width:80%;
-    height:3.2rem;
-    border:1px dashed gray;
-    position: relative;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Roboto','sans-serif';
-    padding: .8rem .5rem;
-}
-input[type="file"]::file-selector-button {
-    background-color: darkred;
-    color: white;
-    padding: 10px 20px;
-    font-family: 'Roboto','sans-serif';
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;  
-    position: absolute;
-    right: 1rem;
-    bottom: .3rem;
-}
-input[type=text],input[type=img],input[type=date],input:focus {
+input[type=text],input[type=date],input:focus {
     outline:none;
     
   }
-.adminEventPageForm .eventInputTitle{
+.adminPageForm .InputTitle{
     width:80%;
     height:2rem;
     font-size:1.2rem;
     color:darkred;
     padding:.6rem .4rem;
 }
-.adminEventPageForm .adminEventTime{
-    display:flex;
-    width:80%;
-    height:2rem;
-    align-items:center;
-    gap:1rem;
-}
-.adminEventTimeInupt{
+.adminTimeInupt{
     width:49%;
     color:darkred;
     font-size:1rem;
     font-family:'Roboto','sans-serif';
     padding:.3rem;
 }
-.adminEventPageForm .adminEventLocation{
-    width:80%;
-    height:2rem;
-    font-size:1.2rem;
-    color:darkred;
-    padding:.6rem .4rem;
-}
-
-.adminEventPageForm .quill{
+.adminPageForm .quill{
     width: 80%;
     font-size:1.2rem;
     color:darkred;
     border-radius:8px;
     outline:none;
 }
-.adminEventPageForm .adminEventbtn{
+.adminPageForm .adminbtn{
     padding: .6rem 1.3rem;
     border-radius: 4px;
     background: linear-gradient(145deg,darkred,darkgray);
@@ -105,17 +66,17 @@ input[type=text],input[type=img],input[type=date],input:focus {
 
 
 
-.adminEventCom{
+.adminCom{
     width: 90%;
     height: auto;
     margin: 1rem 0;
 }
-.adminEventHeading{
+.adminHeading{
     font-size: 2.4rem;
     color: darkred;
     font-family: 'Roboto','sans-serif';
 }
-.adminEvents{
+.adminExamNews{
     width: 100%;
     height: 100%;
     display: flex;
@@ -127,7 +88,7 @@ input[type=text],input[type=img],input[type=date],input:focus {
     margin: 1rem 0;
 
 }
-.adminEventsRow{
+.adminExamNewsRow{
     width: 90%;
     height: 3rem;
     display: flex;
@@ -140,35 +101,25 @@ input[type=text],input[type=img],input[type=date],input:focus {
     animation: all 1.5s alternate  ease-in;
     
 }
-.adminEventsRow:hover{
+.adminExamNewsRow:hover{
     transform: scale(1.01);
 }
 
-.adminEventsRow .adminEventsImg{
-    height: 100%;
-    width: 3rem;
-    object-fit: cover;
-}
-.adminEventsTitle{
+
+.adminExamNewsTitle{
  font-size: 1.3rem;
  color:white;
  font-family: 'Roboto','sans-serif';
 }
-.adminEventsDate{
+.adminExamNewsDate{
 font-size: 1rem;
 color: white;
 font-weight: bold;
 }
-.adminEventsTime {
-    font-size: 1rem;
-    color: white;
+.adminExamNewsDet{
+    font-size: 1.1rem;
     font-family: 'Roboto','sans-serif';
-}
- .adminEventsLocation{
-    font-size: 1rem;
     color: white;
-    font-family: 'Roboto','sans-serif';
-
 }
 .adminBtns{
     display: flex;
@@ -179,17 +130,17 @@ font-weight: bold;
     padding: 0 .5rem;
 }
 
-.adminEventsIcon{
+.adminExamNewsIcon{
     font-size: 1.3rem;
     color: white;
 }
 
-.adminEventsIcon:hover{
+.adminExamNewsIcon:hover{
     color: lightcoral;
     cursor: pointer;
 }
 
-.noEvents{
+.noExamNews{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Roboto','sans-serif';

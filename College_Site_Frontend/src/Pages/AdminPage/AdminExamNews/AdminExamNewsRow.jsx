@@ -2,22 +2,20 @@ import React from 'react'
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 
-function AdminEventsRow({ event, deleteEvent }) {
+function AdminExamNewsRow({ examNews, deleteExamNews }) {
     
     return (
         <>
-            <img src={`http://localhost:5001/${event.img}`} alt="" className="adminEventsImg" />
-            <div className="adminEventsTitle">{event.title}</div>
-            <div className="adminEventsDet">{''}</div>
-            <div className="adminEventsDate">{event.date}</div>
-            <div className="adminEventsTime">{event.time}</div>
-            <div className="adminEventsLocation">{event.location}</div>
+           
+            <div className="adminExamNewsTitle">{examNews.semesterName}</div>
+            <div className="adminExamNewsDate">{examNews.date}</div>
+            <div className="adminExamNewsDet">{examNews.detail}</div>
           <div className="adminBtns">
-          <div className="adminEventsDelete adminEventsIcon" onClick={() => { deleteEvent(event._id) }}> <MdDelete /> </div>
-            <div className="adminEventsEdit adminEventsIcon"> <FaEdit /> </div>
+          <div className="adminExamNewsDelete adminEventsIcon" onClick={() => { deleteExamNews(examNews._id) }}> <MdDelete /> </div>
+            <div className="adminExamNewsEdit adminEventsIcon"> <FaEdit /> </div>
           </div>
         </>
     )
 }
 
-export default AdminEventsRow
+export default AdminExamNewsRow
