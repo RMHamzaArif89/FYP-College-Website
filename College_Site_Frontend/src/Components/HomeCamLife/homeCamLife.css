@@ -5,15 +5,15 @@
     font-family: "Open Sans", sans-serif;
 }
 .homeCamLife h1{
-    font-size: 3.4rem;
+    font-size: 3.1rem;
     color: darkred;
     text-align: justify;
     font-family: "Open Sans", sans-serif;
 }
 .homeCamLife .homeCamLifeDes{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
-    color: darkgray;
+    color: rgb(115, 114, 114);
     padding: 1rem 0;
    
   font-family: "Roboto", sans-serif;

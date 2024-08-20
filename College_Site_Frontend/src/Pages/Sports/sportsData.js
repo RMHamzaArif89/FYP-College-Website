@@ -7,17 +7,17 @@ export const SportsCubeData=[
     {
         heading:'heading',
         text:'text text rejfkld djk jd',
-        img:'/images/sportsPage.jpg'
+        img:'/images/sportsPage2.jpg'
     },
     {
         heading:'heading',
         text:'text text rejfkld djk jd',
-        img:'/images/sportsPage.jpg'
+        img:'/images/sportsPage3.jpg'
     },
     {
         heading:'heading',
         text:'text text rejfkld djk jd',
-        img:'/images/logo.jpg'
+        img:'/images/sportsPage4.jpg'
     },
 ]
 

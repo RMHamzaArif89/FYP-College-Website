@@ -45,7 +45,7 @@
 .nav-links a{
   /* Border radius for w3rcontainer */
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   display: inline-block; 
   position: relative; 
@@ -96,7 +96,7 @@
 
 .nav-tog a {
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     padding: 12px 14px;
     

@@ -91,7 +91,7 @@ export const createSportsNews = async(req, res, next) => {
       //     errorHandler(403, 'You are not allowed to delete this comment')
       //   );
       // }
-      await sportsNewsModel.findByIdAndDelete(req.params.eventId);
+      await sportsNewsModel.findByIdAndDelete(req.params.sportsNewsId);
       res.status(200).json({message:'sportsNews has been deleted'});
     } catch (error) {
       next(error);

@@ -19,7 +19,7 @@
 
 }
 .sportsHeading{
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: white;
     font-weight: bolder;
     align-self: self-start;
@@ -28,7 +28,7 @@
 
 }
 .sportsHeading2{
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: lightcoral;
     align-self: self-start;
     text-align: justify;
@@ -106,8 +106,8 @@
   }
 .sportsCol1Card{
     width: 100%;
-    min-height: 14rem;
-    max-height: auto;
+    height: 22rem;
+    /* max-height: auto; */
     display: flex;
     justify-content: space-between;
     background: darkred;

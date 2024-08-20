@@ -23,7 +23,7 @@ function AdminSportsNewsCom() {
 
 
 
-  const deleteNotice = async (Id) => {
+  const deleteSportsNews = async (Id) => {
 
     try {
       setLoading(true)
@@ -61,7 +61,7 @@ function AdminSportsNewsCom() {
               ...loading
             </div> : (sportsNews.map((sportsNews) =>
               <div className="adminEditPageRow">
-                <AdminSportsNewsRow sportsNews={sportsNews} deleteNotice={deleteNotice} />
+                <AdminSportsNewsRow sportsNews={sportsNews} deleteSportsNews={deleteSportsNews} />
               </div>))
           ) : <div className="noEditPage">No Sports News Found</div>
         }

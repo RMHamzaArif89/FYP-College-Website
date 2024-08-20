@@ -34,14 +34,14 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(106, 102, 102, 0.12) 0px 4px 6px, rgba(111, 109, 109, 0.17) 0px 12px rgba(111, 108, 108, 0.09) 0px -3px 5px;
     text-align: center;
 }
-.examCard:nth-child(2){
+/* .examCard:nth-child(){
     width: 50%;
    
 }
 .examCard:nth-child(3){
     width: 50%;
     
-}
+} */
 .examCard .semesterHeading{
     font-size: 2.6rem;
     font-weight: bold;

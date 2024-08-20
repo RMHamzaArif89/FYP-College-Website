@@ -8,7 +8,7 @@
 
 .eventHeading {
   padding: 1rem 0;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-align: center;
   color: darkred;
   text-align: justify;
@@ -40,7 +40,7 @@
 .eventsPageLink a{
   text-decoration: none;
   padding: .8rem 1.2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: lightslategray;
   color: darkred;
   border-radius: 3px;

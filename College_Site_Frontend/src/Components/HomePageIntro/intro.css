@@ -15,20 +15,20 @@
     
 }
 .introHeading{
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     color: darkred;
     text-align: justify;
     font-weight: bolder;
     
-  font-family: "Roboto", sans-serif;
+  font-family: "Open-sans", sans-serif;
     
     
 }
 .introPara{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: rgb(136, 134, 134);
     
-  font-family: "Roboto", sans-serif;
+  font-family: "Open-sans", sans-serif;
     line-height: 2.1rem;
     text-align:justify;
     margin: 0.8rem 0;

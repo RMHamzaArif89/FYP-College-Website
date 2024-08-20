@@ -8,11 +8,11 @@
     
 }
 .rulesCon .rulesHeading{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: white;
     /* font-weight: bold; */
     line-height: 2.8rem;
-    padding: 0.8rem;
+    padding: 0.4rem;
     background:#411616;
     display: inline-block;
     border-radius: 8px;
@@ -20,10 +20,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
 
 }
 .rulesDetails{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     letter-spacing: 0.60px;
     font-family: "Open Sans", sans-serif;
@@ -34,7 +35,7 @@
     display: flex;
     align-items: flex-start;
     gap: .6rem;
-    font-size: 1.1rem;
+    font-size: .9rem;
     font-style: Arial;
     color: lightsalmon;
     color: white;
@@ -44,8 +45,8 @@
     font-family: "Open Sans", sans-serif;
 }
 .rulesPoints img{
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.1rem;
+    height: 1.1rem;
     margin-top: .5rem;
     object-fit: cover;
 }

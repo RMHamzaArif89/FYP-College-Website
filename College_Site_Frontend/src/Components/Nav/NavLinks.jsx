@@ -11,6 +11,7 @@ function NavLinks() {
                 <NavLink to="/examNews" activeClassName="active">Exam News</NavLink>
                 <NavLink to="/admissionProcess" activeClassName="active">Admissoin Process</NavLink>
                 <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                <NavLink to="/GalleryPage" activeClassName="active">Gallery</NavLink>
   </>
 
   )
