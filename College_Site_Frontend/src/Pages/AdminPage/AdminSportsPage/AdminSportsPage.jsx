@@ -139,7 +139,6 @@ const handlePostSubmit = async (e) => {
           }} className='adminEditPageDetail' placeholder="Detail" 
           />;
     
-
         <button className="adminEditPagebtn" type="submit">Create Sports News</button>
 
       </form>

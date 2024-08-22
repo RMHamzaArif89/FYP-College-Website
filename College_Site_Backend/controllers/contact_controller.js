@@ -10,8 +10,9 @@ export const createUserContact = async(req, res, next) => {
     // if (!req.user.isAdmin) {
     //   return next(errorHandler(403, 'You are not allowed to create a post'));
     // }
+    console.log(req.body.message)
 
-    if (!req.body.email || !req.body.messsage) {
+    if (!req.body.email || !req.body.message) {
       return next(errorHandler(400, 'Please provide all required fields'));
     }
 
