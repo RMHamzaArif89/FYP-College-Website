@@ -63,19 +63,19 @@ export const createUserContact = async(req, res, next) => {
 
 
 //Delete ExamNews
-  export const deleteExamNews = async (req, res, next) => {
+  export const deleteUserContact = async (req, res, next) => {
     console.log('enter delete')
     try {
-      const userContact = await userContactModel.findById(req.params.examNewsId);
+      const userContact = await userContactModel.findById(req.params.userContactId);
       if (!userContact) {
-        return next(errorHandler(404, 'event not found'));
+        return next(errorHandler(404, 'user not found'));
       }
       // if (event.userId !== req.user.id && !req.user.isAdmin) {
       //   return next(
       //     errorHandler(403, 'You are not allowed to delete this comment')
       //   );
       // }
-      await userContactModel.findByIdAndDelete(req.params.examNewsId);
+      await userContactModel.findByIdAndDelete(req.params.userContactId);
       res.status(200).json({message:'event has been deleted'});
     } catch (error) {
       next(error);
