@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 
 function ImgCon({homeSlider}) {
-  console.log(homeSlider)
+  // console.log(homeSlider)
  
     const imgSliderStyle={
         backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(${homeSlider})`,

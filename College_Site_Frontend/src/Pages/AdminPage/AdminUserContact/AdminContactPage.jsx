@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 // import navigate from 'react-router-dom'
 import AdminContactRow from './AdminContactRow';
+import './adminContact.css'
 
 
 
@@ -60,7 +61,7 @@ function AdminContactPage() {
             loading ? <div className="loading">
               ...loading
             </div> : (userContact.map((userContact) =>
-              <div className="adminEditPageRow">
+              <div className="adminContactRow">
                 <AdminContactRow userContact={userContact} deleteUserContact={deleteUserContact} />
               </div>))
           ) : <div className="noEditPage">No Query Found</div>

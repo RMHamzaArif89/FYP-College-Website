@@ -33,15 +33,82 @@
     text-align:justify;
     margin: 0.8rem 0;
 }
-.introVideo{
+.introVideo {
     width: 50%;
-    height: 100%;
+    height: auto;
     padding: 1rem;
-}
-.introVideo video{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .introVideo:hover {
+    transform: scale(1.01); /* Slightly enlarges the video on hover */
+    box-shadow: 0 0 15px rgba(215, 109, 109, 0.5); /* Adds shadow on hover */
+  }
+  
+  .introVideo video {
     width: 100%;
     height: 100%;
-}
+    border-radius: 8px;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  
+  .introVideo:hover video {
+    filter: brightness(110%); /* Darkens the video on hover */
+    transform: scale(1.01); /* Slightly enlarges the video content */
+  }
+  
+  
+  
+  .introVideo video:hover video::-webkit-media-controls {
+    display: block;
+  }
+  
+  
+  
+  
+  .introVideo video::-webkit-media-controls-current-time-display,
+  .introVideo video::-webkit-media-controls-time-remaining-display,
+  .introVideo video::-webkit-media-controls-fullscreen-button,
+  .introVideo video::-webkit-media-controls-mute-button,
+  .introVideo video::-webkit-media-controls-toggle-closed-captions-button {
+    color:rgb(144, 11, 11);
+    font-family: 'Roboto','sans-serif';
+    font-weight: bolder;
+    font-size: .8rem;
+    
+  }
+ 
+  
+  
+  .introVideo .playPauseButton {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    padding: 1.4rem;
+    background-color: darkred;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .introVideo .playPauseButton:hover {
+    background-color: rgb(220, 20, 20);
+    transform: scale(1.05);
+  }
+  
+  
 @media (max-width:968px) and (min-width:200px) {
     .intro{
         flex-direction: column;

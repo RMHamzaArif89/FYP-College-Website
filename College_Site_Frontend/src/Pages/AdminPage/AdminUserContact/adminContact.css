@@ -1,34 +1,100 @@
 .adminContactRow{
-    width:80%;
-    height: 6rem;
+    width:90%;
+    min-height: 7rem;
+    max-height: auto;
     background: darkred;
-}
-.adminContacDetail{
+    padding: .1rem 1rem 1rem 1rem;
     display: flex;
-    gap: .6rem;
+    /* gap: 1rem; */
+    flex-direction: column;
+    border-radius: 6px;
+    position: relative;
+
 }
-.adminContacDetail .adminContacDetailBox{
-    width: 24%;
+.adminContactDetail{
+    display: flex;
+    /* gap: .6rem; */
+    flex-direction: row;
+    gap: .6rem;
+
+}
+.adminContactDetail .adminContactDetailBox{
+    min-width: 18%;
+    max-width: auto;
     display: flex;
     align-items: center;
     gap: .3rem;
-    font-size: .8rem;
+    font-size: .9rem;
+    font-weight: bold;
     color: white;
     font-family: 'Roboto','sans-serif';
+    text-transform: capitalize;
+
 }
- .adminContacDetailBox .detailBoxIcon{
-    font-size: 1rem;
+ .adminContactDetailBox .detailBoxIcon{
+    font-size: .8rem;
     color: lightskyblue;
  }
  .adminContactQuery{
-    font-size: 1.8rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bolder;
     color: white;
     font-family: 'Roboto','sans-serif';
     padding: .6rem;
  }
- .adminContacMessage{
-    font-size: 1.2rem;
-    color: white;
-    font-family: 'Open-sans','sans-serif';
+ .adminContactMessageIcon{
+    font-size: 1rem;
+    color: darkgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+ }
+ .adminContactMessage{
+    font-size: .9rem;
+    color: lightgray;
+    font-family: 'Roboto','sans-serif';
+    border: .7px solid rgb(163, 62, 62);
+    position: relative;
+    padding: 1rem;
+    border-radius: 8px;
+    transition:.3s;
     
+ }
+ .adminMessageReplyIcon{
+   position: absolute;
+   right: .3rem;
+   top: .3rem;
+   font-size: 1.1rem;
+   color: lightgray;
+   transition:.3s;
+   padding: .2rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .adminMessageReplyIcon:hover{
+   color: white;
+   cursor: pointer;
+   background: rgb(185, 71, 71);
+ }
+ .adminMessageDeleteIcon{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   font-size: 1rem;
+   color: lightgray;
+   cursor: pointer;
+   padding: .2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+ }
+ .adminMessageDeleteIcon:hover{
+   background: rgb(185, 71, 71);
+   color: white;
+
  }
