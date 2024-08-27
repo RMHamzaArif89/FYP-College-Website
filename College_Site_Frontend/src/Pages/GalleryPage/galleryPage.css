@@ -12,6 +12,9 @@
     background-position:center;
     position: relative;
     margin-bottom: 9rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .galleryPageConText{
     width: 80%;
@@ -43,14 +46,15 @@
 }
 
 .galleryPageCon2{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
     display: flex;
     align-items: center;
-    gap: 1.8rem;
+    gap: 1.4rem;
     flex-wrap: wrap;
     padding: 1rem 0;
+    
 }
 .galleryPageCon2 .galleryImg{
     width:22rem;

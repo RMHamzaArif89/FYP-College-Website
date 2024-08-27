@@ -24,7 +24,8 @@ function EventsPage() {
           <div className="eventConTextH1">  GPCSF Organize multiple Events in a year with consistencey</div>
         </div>
       </div>
-      <div className="eventPageUpcoming">
+<div className="eventsCon">
+<div className="eventPageUpcoming">
         <div className="upcomingHeading">
          Latest Upcoming Events
         </div>
@@ -99,6 +100,7 @@ function EventsPage() {
       }
          
       </div>
+</div>
 
     </div>
   )

@@ -52,6 +52,11 @@
     font-family: "Open Sans", sans-serif;
    
 }
+.eventsCon{
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
 
 .eventPageUpcoming{
     width:90%;
@@ -140,7 +145,7 @@
 
 
 .allEvents{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
