@@ -25,7 +25,7 @@ var corsOptions = {
   }
 app.use(cors(corsOptions))
 
-app.use(express.static('upload'))
+
 
 
 //this is middleWare use to encode the form&body request value //example req.body from form
