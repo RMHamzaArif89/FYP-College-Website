@@ -10,6 +10,7 @@ import LinksCards from '../../Components/HomeLinksCards/LinksCards'
 import './home.css'
 import Marquee from '../../Components/Marquee/Marquee'
 import CardsMarquee from '../../Components/CardsMarquee/CardsMarquee'
+import FacultyMembers from '../../Components/FacultyMembers/FacultyMembers'
 function Home() {
   return (
     <div className='home'>
@@ -23,6 +24,7 @@ function Home() {
       </div>
       <CardsMarquee/>
       <LinksCards/>
+      <FacultyMembers/>
     
     </div>
   )
