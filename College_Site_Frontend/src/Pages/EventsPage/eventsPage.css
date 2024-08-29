@@ -59,8 +59,13 @@
 }
 
 .eventPageUpcoming{
-    width:90%;
-    height: 42rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+   
 
 }
 

@@ -6,26 +6,31 @@ const facultyData = [
         name: 'Dr. John Doe',
         image: 'https://via.placeholder.com/150',
         details: 'Ph.D. in Computer Science from XYZ University',
+        department:'Computer Science'
     },
     {
         name: 'Dr. Jane Smith',
         image: 'https://via.placeholder.com/150',
         details: 'Ph.D. in Physics from ABC University',
+        department:'Computer Science'
     },
     {
         name: 'Dr. Emily Johnson',
         image: 'https://via.placeholder.com/150',
         details: 'Ph.D. in Mathematics from DEF University',
+        department:'Computer Science'
     },
     {
         name: 'Dr. Michael Brown',
         image: 'https://via.placeholder.com/150',
         details: 'Ph.D. in Chemistry from GHI University',
+        department:'Computer Science'
     },
     {
         name: 'Dr. Sarah Davis',
         image: 'https://via.placeholder.com/150',
         details: 'Ph.D. in Biology from JKL University',
+        department:'Computer Science'
     },
     {
         name: 'Dr. Robert Wilson',
@@ -52,6 +57,7 @@ const FacultyMembers = () => {
                     key={faculty.name}
                     className={`faculty-card ${index === currentIndex ? 'active' : ''}`}
                 >
+                    <div className='faculty-department-name'>Department of {faculty.department}</div>
                     <img src={faculty.image} alt={faculty.name} className="faculty-image" />
                     <h3 className="faculty-name">{faculty.name}</h3>
                     <p className="faculty-details">{faculty.details}</p>

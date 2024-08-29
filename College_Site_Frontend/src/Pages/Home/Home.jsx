@@ -24,7 +24,10 @@ function Home() {
       </div>
       <CardsMarquee/>
       <LinksCards/>
+      <div className='facultyMember'>
       <FacultyMembers/>
+
+      </div>
     
     </div>
   )

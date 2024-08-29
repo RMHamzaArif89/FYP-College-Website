@@ -1,7 +1,7 @@
 .faculty-container {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 24rem;
+    height: 28rem;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 15px;
@@ -33,14 +33,22 @@
 }
 
 .faculty-card:hover {
-    transform: scale(1.05) rotateY(360deg); /* Rotate 360 degrees on hover */
+    transform:  rotateY(360deg); /* Rotate 360 degrees on hover */
     transition: transform 1s ease-in-out; /* Smooth transition for the flip */
     cursor: pointer;
 }
-
+.faculty-department-name{
+    font-size:1rem;
+    font-weight:bold;
+    font-family:'Roboto','sans-serif';
+    position:fixed;
+    left:3px;
+    top:3px;
+    color:darkred;
+}
 .faculty-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;
@@ -51,7 +59,7 @@
 .faculty-name {
     font-size: 1.5rem;
     margin: 0;
-    color: #343a40;
+    color: darkred;
     font-family: 'Roboto', sans-serif;
 }
 

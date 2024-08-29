@@ -17,6 +17,15 @@
     margin-top: 2rem;
  
 }
+.facultyMembers{
+    width:90%;
+    margin:0 auto;
+    min-height:36rem;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+}
 
 @media (max-width:968px) and (min-width:200px) {
     .campusDet{
