@@ -33,7 +33,7 @@ import EventsPage from './Pages/EventsPage/EventsPage';
 import GalleryPage from './Pages/GalleryPage/GalleryPage';
 import Admission from './Pages/Admission/Admission';
 import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
-
+import Careers from './Pages/Careers/Careers'
 
 
 //admin pages
@@ -72,6 +72,7 @@ const router = createBrowserRouter(
         <Route path='/GalleryPage' element={<GalleryPage />} />
         <Route path='/admission' element={<Admission />} />
         <Route path='/noticeboard' element={<Noticeboard />} />
+        <Route path='/careers' element={<Careers />} />
       </Route>
 
       <Route element={<AdminLayout />}>

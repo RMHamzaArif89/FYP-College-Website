@@ -1,0 +1,140 @@
+.careers{
+ width: 100%;
+ height: auto;
+
+}
+.careersCon{
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    gap: .6rem;
+}
+.careersConText{
+    width: 50%;
+    padding: 2rem;
+    height: 100%;
+
+}
+.careersConText .conTextHeading{
+    font-size: 2.8rem;
+    color: darkred;
+    font-family: 'Roboto','sans-serif';
+    font-weight: bolder;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.conTextHeading .conTextImg{
+    width: 2.3rem;
+    height: 2.3rem;
+    object-fit: cover;
+}
+.careersConText .conTextDetail{
+    font-size: 1.1rem;
+    color: darkgray;
+    font-family: 'Roboto','sans-serif';
+    text-align: justify;
+    line-height: 1.4;
+    word-spacing: .4rem;
+}
+.careersConImg{
+    width: 50%;
+    height: 100%;
+    background-image: url('images/careerImg.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.careersCon2{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.careersCon2 .careersCon2H1{
+    font-size: 2rem;
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.careersCon2H1 .careersCon2H1Img{
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: cover;
+}
+.careersCon2 .careersCon2H2{
+    font-size: 1.3rem;
+    color: darkgray;
+    font-family: 'Roboto','sans-serif';
+
+}
+
+.careersCon2 .careersCon2JobRow{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid lightgray;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.careersJobTitle{
+    font-size: 2rem;
+    color: darkgray;
+    font-weight: bolder;
+    font-family: 'Roboto','sans-serif';
+}
+.careersCon2JobRow .jobRow{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+.jobCol{
+    display: flex;
+    gap: .4rem;
+    flex-direction: column;
+}
+
+
+ .jobHeading{
+    font-size: 1.4rem;
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+}
+.jobHeadingText{
+    font-size: 1rem;
+    color: darkgray;
+    font-family: 'Roboto','sans-serif';
+    padding: .2rem .3rem;
+
+}
+
+.jobApplyBtn{
+    padding: .9rem 1.2rem;
+    border-radius: 8px;
+    background: darkred;
+    color: white;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Roboto','sans-serif';
+}
