@@ -45,6 +45,7 @@ import AdminNoticePage from './Pages/AdminPage/AdminNoticePage/AdminNoticePage';
 import AdminSportsNewsPage from './Pages/AdminPage/AdminSportsPage/AdminSportsPage';
 import AdminHomeSliderPage from './Pages/AdminPage/AdminHomeSliderPage/AdminHomeSliderPage';
 import AdminContactPage from './Pages/AdminPage/AdminUserContact/AdminContactPage.jsx'
+import AdminCareersPage from './Pages/AdminPage/AdminCareersPage/AdminCareersPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -83,6 +84,7 @@ const router = createBrowserRouter(
         <Route path='/adminSportsNewsPage' element={<AdminSportsNewsPage />} />
         <Route path='/adminHomeSliderPage' element={<AdminHomeSliderPage />} />
         <Route path='/adminContactPage' element={<AdminContactPage />} />
+        <Route path='/adminCareersPage' element={<AdminCareersPage />} />
 
       </Route>
 

@@ -138,3 +138,7 @@
     font-size: 1.1rem;
     font-family: 'Roboto','sans-serif';
 }
+.jobApplyBtn:hover{
+    background: rgba(139, 0, 0, 0.832);
+    cursor: pointer;
+}
