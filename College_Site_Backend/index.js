@@ -13,6 +13,7 @@ import notice_Routes from './routes/noticeboard_route.js'
 import sportsNews_Routes from './routes/sports_route.js'
 import homeSlider_Routes from './routes/homeSlider_route.js'
 import userContact_Routes from './routes/contact_route.js'
+import careers_Routes from './routes/careers_route.js'
 
 
 const app=express()
@@ -41,6 +42,7 @@ app.use('/api/notice', notice_Routes);
 app.use('/api/sportsNews', sportsNews_Routes);
 app.use('/api/homeSlider', homeSlider_Routes);
 app.use('/api/userContact',userContact_Routes)
+app.use('/api/careers',careers_Routes)
 //require the db connection
 import ('./db/Connection.js')
 
