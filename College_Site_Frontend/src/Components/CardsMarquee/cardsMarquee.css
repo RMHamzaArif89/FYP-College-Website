@@ -9,6 +9,7 @@
 .cardsMarquee {
   display: flex;
   width: 100%; 
+  cursor: pointer;
 }
 
 .cardMarquee {
@@ -29,9 +30,17 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardMarquee h3 {
+.cardMarquee h1 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: darkred;
+  font-family: 'Roboto','sans-serif';
+  font-weight: bold;
+}
+.cardMarquee h2{
+  font-size: 1rem;
+  font-family: 'Roboto','sans-serif';
+  
 }
 
 .cardMarquee button {

@@ -4,8 +4,8 @@ import './eventsPage.css'
 import { WiTime3 } from "react-icons/wi";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineDateRange } from "react-icons/md";
-import { eventsPageData } from './eventsPageData';
-import { eventsPageDataCurrent } from './eventsPageData';
+// import { eventsPageData } from './eventsPageData';
+// import { eventsPageDataCurrent } from './eventsPageData';
 import { FaLongArrowAltRight } from "react-icons/fa";
 function EventsPage() {
   let[events,setEvents]=useState([])

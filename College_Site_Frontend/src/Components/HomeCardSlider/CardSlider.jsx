@@ -54,7 +54,7 @@ function CardSlider() {
        <div className="eventPageCardPoints locations">
        <CiLocationOn className='eventPageCardPointsIcon'/> {event.location}
        </div>
-       <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div>
+       <div dangerouslySetInnerHTML={{__html:event.detail}}  className="eventPageCardDet"/>
      </div>
    </SwiperSlide>
     )

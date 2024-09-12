@@ -1,6 +1,8 @@
 .sideBarAdmin{
-    width: 16%;
-    height: calc(100vh - 3rem);
+    min-width: 12rem;
+    max-width: 14rem;
+    min-height: calc(100vh - 3rem);
+    max-height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -8,6 +10,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1.4rem 1rem;
     background: darkred;
+    position: relative;
+    left: 0;
+    animation: slide 0.8s;
+    animation-delay: 0s;
 }
 .sideBarAdmin .sideBarAdminHeading{
     font-size: 1.4rem;
@@ -16,7 +22,7 @@
 
 }
 .sideBarAdmin .sideBarAdminLinks{
-    padding: 1rem 1.2rem;
+    padding: 1rem .8rem;
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -52,4 +58,20 @@
   }
   .sideBarAdminLinks a.active{
    color: lightcoral;
+}
+
+@keyframes slide {
+    0% {
+        left: -250px;
+        opacity: 0;
+    }
+    50%{
+    
+        opacity: 0.6;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
 }

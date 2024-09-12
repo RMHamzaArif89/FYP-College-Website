@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { BSData } from './ProgramsData'
+import departmentData from '../DepartmentPage/depertment.js'
 import ProgramsModal from './ProgramsModal'
 import './programs.css'
+
 
 function BS() {
   let[query,setQuery]=useState('')
@@ -19,19 +21,20 @@ function BS() {
 <div className="programsBoxData">
   
 {
-            BSData.filter((data)=>{
+            departmentData.filter((data)=>{
               return query.toLowerCase() ===''? data:
               data.title.toLowerCase().includes(query.toLowerCase()) 
             }).map((data,i)=>{
                 return(
                <div className="programsCard">
-                <div className="programsTitle ">{data.title}</div>
+                <div className="programsTitle ">{data.name}</div>
                 <div className="programsBtn" onClick={()=>openModalFunc(i)}>Detail</div>
+                <div className="departmentLink"></div>
                </div>
                 )
             })
         }
-        {programModal&&<ProgramsModal data={BSData[ind]} setModal={setProgramsModal}/>}
+        {programModal&&<ProgramsModal data={departmentData[ind]} setModal={setProgramsModal}/>}
   </div>  
 </>
   )

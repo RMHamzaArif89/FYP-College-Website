@@ -6,6 +6,7 @@
     padding: 0 1rem;
     justify-content: space-between;
     background: darkred;
+
 }
 .topBarAdmin .topBarHeading{
     font-size: 1.2rem;
@@ -20,6 +21,11 @@
     width: 2rem;
     height:2rem;
     object-fit: cover;
+    cursor: pointer;
+    animation: all .4s linear;
+}
+.topBarAdmin .navMenu:hover{
+    transform: scale(1.1);
 }
 .topBarAdmin .topBarUser{
     display: flex;

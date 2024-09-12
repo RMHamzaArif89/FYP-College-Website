@@ -60,7 +60,7 @@ function AdminNoticeCom() {
             loading ? <div className="loading">
               ...loading
             </div> : (notice.map((notice) =>
-              <div className="adminEditPageRow">
+              <div className="adminEditPageRow" key={notice._id}>
                 <AdminNoticeRow notice={notice} deleteNotice={deleteNotice} />
               </div>))
           ) : <div className="noEditPage">No Notice Found</div>

@@ -26,16 +26,16 @@
 }
 .linksCard .linksTitle{
     width: 80%;
-    padding: 0.5rem 0.3rem;
+    padding: 0.5rem 1rem;
     background:darkred;
     border-radius: 8px;
     border-right: 25px solid rgb(137, 138, 137);
-    text-align: center;
+    text-align:center;
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
     position: absolute;
-    left: -2rem;
+    left: 0;
     bottom: 0;
     text-decoration:none;
     font-family: "Roboto", sans-serif;
@@ -43,7 +43,7 @@
 }
 @keyframes title {
     0%{
-        left: -2rem;
+        left: -1rem;
     }
     100%{
         left: 0rem;
@@ -51,7 +51,7 @@
     
 }
 .linksCard .linksTitle:hover{
-    left: 0;
+    left:2rem;
     cursor: pointer;
     background: gray;
     animation: title 0.7s;

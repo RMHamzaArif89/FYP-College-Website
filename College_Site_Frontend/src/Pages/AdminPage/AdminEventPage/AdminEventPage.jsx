@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import axios from 'axios'
 import 'react-quill/dist/quill.snow.css';
-import './AdminEventPage.css'
 import AdminEventCom from './AdminEventCom';
+import '../adminEditPage.css'
 
 
 function AdminEventPage() {
@@ -133,24 +133,24 @@ const handlePostSubmit = async (e) => {
    }  
 };
   return (
-    <div className='adminEventPage'>
-      <form className='adminEventPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
-      <div className="adminEventHeading">Create Event</div>
+    <div className='adminPageEdit'>
+      <form className='adminEditPageForm' onSubmit={(e) => { handleSubmit(e) }} encType='multipart/form-data'>
+      <div className="adminEditPageHeading">Create Event</div>
 
-        <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='eventInputImg' />
-        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='eventInputTitle' />
+        <input onChange={(e) => setValues(pre => { return { ...pre, [e.target.name]: e.target.files[0] } })} name="img" type="file" accept='image/*'  className='adminEditPageImgInp' />
+        <input onChange={(e) => { handleChange(e) }} value={values.title} name="title" type="text" placeholder='Title'  className='adminEditPageTitleInp' />
 
         <ReactQuill theme="snow"  onChange={(value) => {
             setValues({ ...values, detail: value });
-          }} className='adminEventDetail' placeholder="Detail" 
+          }} className='adminEditPageDetail' placeholder="Detail" 
           />;
-        <div className='adminEventTime'>
-          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminEventTimeInupt' />
-          <input onChange={(e) => { handleChange(e) }} value={values.time} name="time" type="time"  className='adminEventTimeInupt' />
-        </div>
-        <input onChange={(e) => { handleChange(e) }} value={values.location} name="location" type="text" placeholder='Location'  className='adminEventLocation' />
+       
+          <input onChange={(e) => { handleChange(e) }} value={values.date} name="date" type="date"  className='adminEditPageDateInp' />
+          <input onChange={(e) => { handleChange(e) }} value={values.time} name="time" type="time"  className='adminEditPageDateInp' />
+        
+        <input onChange={(e) => { handleChange(e) }} value={values.location} name="location" type="text" placeholder='Location'  className='adminEditPageLocation' />
 
-        <button className="adminEventbtn" type="submit">Create Event</button>
+        <button className="adminEditPagebtn" type="submit">Create Event</button>
 
       </form>
 

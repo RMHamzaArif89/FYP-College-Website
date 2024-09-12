@@ -50,8 +50,8 @@ function AdminEventCom() {
 
   }
   return (
-    <div className='adminEventCom'>
-      <div className="adminEventHeading">
+    <div className='adminEditPageCom'>
+      <div className="adminEditPageHeading">
         Events
       </div>
     <div className="adminEvents">
@@ -60,7 +60,7 @@ function AdminEventCom() {
       loading?<div className="loading">
 ...loading
       </div>: (events.map((event) =>
-          <div className="adminEventsRow">
+          <div className="adminEditPageRow">
             <AdminEventsRow event={event} deleteEvent={deleteEvent}/>
           </div>))
     ):<div className="noEvents">No Events Found</div>

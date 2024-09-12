@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import './programs.css';
 import { ImCross } from "react-icons/im";
 
+
 function ProgramsModal({ data, setModal }) {
   
   useEffect(() => {
@@ -15,11 +16,12 @@ function ProgramsModal({ data, setModal }) {
         <div className="contactInfoCross">
           <ImCross onClick={() => setModal(false)} />
         </div>
-        <div className="programsModalHeading">{data.title} Department</div>
+        <div className="programsModalHeading">{data.name} Department</div>
         <div className="programsModalHeading2">Mission Statement</div>
         <div className="programsModalDes">
           {data.description}
         </div>
+        
       </div>
     </div>
   );

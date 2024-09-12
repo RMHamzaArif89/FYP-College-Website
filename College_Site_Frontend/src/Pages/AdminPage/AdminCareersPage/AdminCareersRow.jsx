@@ -20,7 +20,7 @@ function AdminCareersRow({ careers, deleteCareers }) {
         dangerouslySetInnerHTML={{ __html: careers.jobInstructions }}
       />
       <div className="adminEditPageQualification">{careers.jobQualification}</div>
-      <div className="adminBtns">
+      <div className="adminEditPageBtns">
         <div
           className="adminEditPageDelete adminEditPageIcon"
           onClick={() => {

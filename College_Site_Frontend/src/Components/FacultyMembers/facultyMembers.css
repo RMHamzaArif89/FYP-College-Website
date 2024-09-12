@@ -47,8 +47,8 @@
     color:darkred;
 }
 .faculty-image {
-    width: 250px;
-    height: 250px;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;

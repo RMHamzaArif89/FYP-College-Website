@@ -1,0 +1,36 @@
+.careersForm{
+width: 100%;
+height: auto;
+padding: 2rem 0;
+background: linear-gradient(90deg,darkred,lightgray,darkgray,darkred);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+perspective: 1000px;
+}
+.careersFormFileBtn{
+    width: 100%;
+
+}
+.careersFormFile{
+    width: 80%;
+    height: 3.2rem;
+    border: 1px dashed gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto','sans-serif';
+    padding: 0.8rem 0.5rem;
+}
+
+.careersFormBtn{
+    background: darkred !important;
+}
+.careersFormFile{
+    background: darkred !important;
+    width: 40%;
+    color: white;
+    font-family: 'Roboto','sans-serif';
+    font-size: 1rem;
+    font-weight: bold;
+}

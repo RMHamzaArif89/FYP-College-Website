@@ -93,3 +93,20 @@
     display: inline-block;
     transition: background-color 0.5s ease-in-out;
   }
+
+
+  @media (max-width:968px) and (min-width:200px) {
+.imgSliderH1{
+    font-size: 1.4rem;
+    text-align: left;
+}
+.imgSliderH2{
+    font-size: 1.1rem;
+    text-align: left;
+}
+.pagin{
+    height: 2%;
+    bottom: .7%;
+}
+    
+}

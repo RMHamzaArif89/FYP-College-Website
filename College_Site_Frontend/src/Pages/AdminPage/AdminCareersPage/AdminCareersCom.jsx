@@ -52,7 +52,7 @@ function AdminCareersCom() {
   return (
     <div className='adminEditPageCom'>
       <div className="adminEditPageHeading">
-        ExamNews
+        Jobs Open
       </div>
       <div className="adminEditPageRows">
         {
@@ -63,7 +63,7 @@ function AdminCareersCom() {
               <div className="adminEditPageRow">
                 <AdminCareersRow careers={careers} deleteCareers={deleteCareers} />
               </div>))
-          ) : <div className="noEditPage">No Exam News Found</div>
+          ) : <div className="noEditPage">No Jobs Found</div>
         }
       </div>
     </div>

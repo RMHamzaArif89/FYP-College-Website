@@ -48,5 +48,16 @@
         width: 100%;
         padding:3rem;
     }
+    .facultyMembers{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .facultyMembers .principleMsg{
+        width: 90%;
+        height: 40rem;
+
+    }
     
 }

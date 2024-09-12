@@ -6,15 +6,15 @@ function AdminEventsRow({ event, deleteEvent }) {
     
     return (
         <>
-            <img src={`http://localhost:5001/${event.img}`} alt="" className="adminEventsImg" />
-            <div className="adminEventsTitle">{event.title}</div>
-            <div className="adminEventsDet">{''}</div>
-            <div className="adminEventsDate">{event.date}</div>
-            <div className="adminEventsTime">{event.time}</div>
-            <div className="adminEventsLocation">{event.location}</div>
-          <div className="adminBtns">
-          <div className="adminEventsDelete adminEventsIcon" onClick={() => { deleteEvent(event._id) }}> <MdDelete /> </div>
-            <div className="adminEventsEdit adminEventsIcon"> <FaEdit /> </div>
+            <img src={`http://localhost:5001/${event.img}`} alt="" className="adminEditPageImg" />
+            <div className="adminEditPageTitle">{event.title}</div>
+            <div className="adminEditPageDet">{''}</div>
+            <div className="adminEditPageDate">{event.date}</div>
+            <div className="adminEditPageTime">{event.time}</div>
+            <div className="adminEditPageLocation">{event.location}</div>
+          <div className="adminEditPageBtns">
+          <div className="adminEventsDelete adminEditPageIcon" onClick={() => { deleteEvent(event._id) }}> <MdDelete /> </div>
+            <div className="adminEventsEdit adminEditPageIcon"> <FaEdit /> </div>
           </div>
         </>
     )

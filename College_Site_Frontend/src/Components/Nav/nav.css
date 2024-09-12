@@ -5,7 +5,6 @@
     padding: 0.5rem 2rem;
     background: #5b1d1d;
     justify-content: space-between;
-
 }
 
 /* nav-detail class left side */
@@ -153,18 +152,15 @@
     left: 0;
     position: fixed;
     background: linear-gradient(140deg,#3d0602,#440b16);
-    
     animation: slide 0.8s;
     animation-delay: 0s;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.6rem;
     display: none;
     animation-fill-mode: both;
-
-
-
+    padding: .5rem 2rem;
 }
 
 @keyframes slide {
@@ -182,12 +178,14 @@
         opacity: 1;
     }
 }
+
 .nav-side a{
     text-decoration: none;
     color: white;
     display: block;
     font-size: 1.6rem;
-    text-align: center;
+    text-align: justify;
+    /* padding: 0 1rem; */
 }
 
 

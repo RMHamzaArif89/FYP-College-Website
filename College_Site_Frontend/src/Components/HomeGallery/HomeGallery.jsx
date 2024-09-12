@@ -34,10 +34,10 @@ export default function HomeGallery() {
         className="mySwiper"
       >
         {
-            Images.map((img)=>{
+            Images.map((img,i)=>{
                 return(
                     <SwiperSlide>
-                        <img src={img.src} alt="" className="galleryImg" />
+                        <img src={img.src} alt="" className="galleryImg" key={i} />
                     </SwiperSlide>
                 )
             })

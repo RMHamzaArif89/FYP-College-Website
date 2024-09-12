@@ -14,6 +14,7 @@ import sportsNews_Routes from './routes/sports_route.js'
 import homeSlider_Routes from './routes/homeSlider_route.js'
 import userContact_Routes from './routes/contact_route.js'
 import careers_Routes from './routes/careers_route.js'
+import jobForm_Routes from './routes/jobForm_route.js'
 
 
 const app=express()
@@ -43,6 +44,7 @@ app.use('/api/sportsNews', sportsNews_Routes);
 app.use('/api/homeSlider', homeSlider_Routes);
 app.use('/api/userContact',userContact_Routes)
 app.use('/api/careers',careers_Routes)
+app.use('/api/jobForm',jobForm_Routes)
 //require the db connection
 import ('./db/Connection.js')
 
