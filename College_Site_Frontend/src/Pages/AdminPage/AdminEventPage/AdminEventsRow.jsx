@@ -14,7 +14,7 @@ function AdminEventsRow({ event, deleteEvent }) {
             <div className="adminEditPageLocation">{event.location}</div>
           <div className="adminEditPageBtns">
           <div className="adminEventsDelete adminEditPageIcon" onClick={() => { deleteEvent(event._id) }}> <MdDelete /> </div>
-            <div className="adminEventsEdit adminEditPageIcon"> <FaEdit /> </div>
+            {/* <div className="adminEventsEdit adminEditPageIcon"> <FaEdit /> </div> */}
           </div>
         </>
     )

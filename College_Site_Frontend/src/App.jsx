@@ -35,6 +35,7 @@ import Admission from './Pages/Admission/Admission';
 import Noticeboard from './Pages/Noticeboard/Noticeboard.jsx';
 import Careers from './Pages/Careers/Careers';
 import Department from './Pages/DepartmentPage/Department';
+import AdminJobApplicationsPage from './Pages/AdminPage/AdminJobApplications/AdminJobApplications';
 
 
 //admin pages
@@ -78,6 +79,7 @@ const router = createBrowserRouter(
         <Route path='/careers' element={<Careers />} />
         <Route path='/careersForm' element={<CareersForm />} />
         <Route path='/department' element={<Department />} />
+        
 
       </Route>
 
@@ -90,6 +92,7 @@ const router = createBrowserRouter(
         <Route path='/adminHomeSliderPage' element={<AdminHomeSliderPage />} />
         <Route path='/adminContactPage' element={<AdminContactPage />} />
         <Route path='/adminCareersPage' element={<AdminCareersPage />} />
+        <Route path='/adminJobApplications' element={<AdminJobApplicationsPage/>}/>
 
       </Route>
 

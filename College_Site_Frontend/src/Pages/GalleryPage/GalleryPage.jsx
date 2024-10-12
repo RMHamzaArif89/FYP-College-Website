@@ -19,7 +19,7 @@ function GalleryPage() {
         <div className='galleryPage'>
             <div className="galleryPageCon">
                 <div className="galleryPageConText">
-                    <div className="conTextHeading">Photo Gallery</div>
+                    <div className="conTextHeading">GPCSF Gallery</div>
                     <div className="conTextDet">Whether our students and faculty are producing groundbreaking research, or solving challenges, there is always something exciting happening at GGCSF!
 
                     </div>

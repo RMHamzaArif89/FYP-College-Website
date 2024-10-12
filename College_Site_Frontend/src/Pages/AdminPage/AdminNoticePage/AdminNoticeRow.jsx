@@ -11,7 +11,7 @@ function AdminNoticeRow({ notice, deleteNotice }) {
             <div className='adminEditPageDet'  dangerouslySetInnerHTML={{__html:notice.detail}}   />
           <div className="adminEditPageBtns">
           <div className="adminEditPageDelete adminEditPageIcon" onClick={() => { deleteNotice(notice._id) }}> <MdDelete /> </div>
-            <div className="adminEditPageEdit adminEditPageIcon"> <FaEdit /> </div>
+            {/* <div className="adminEditPageEdit adminEditPageIcon"> <FaEdit /> </div> */}
           </div>
         </>
     )

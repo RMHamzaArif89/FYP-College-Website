@@ -52,7 +52,7 @@ function EventsPage() {
                   <div className="eventPageCardPoints locations">
                   <CiLocationOn className='eventPageCardPointsIcon'/> {event.location}
                   </div>
-                  <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div>
+                  {/* <div className="eventPageCardBtn">Details <FaLongArrowAltRight/></div> */}
                 </div>
               </div>
     

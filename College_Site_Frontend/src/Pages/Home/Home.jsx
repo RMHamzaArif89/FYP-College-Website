@@ -21,13 +21,13 @@ function Home() {
       <PrincipleMessage/>
       <FacultyMembers/>
       </div>
-      <Marquee/>
+      {/* <Marquee/> */}
       <CardSlider />
       <div className="campusDet">
         <HomeCamLife />
         <HomeGallery />
       </div>
-      <CardsMarquee/>
+      {/* <CardsMarquee/> */}
       <LinksCards/>
     
     

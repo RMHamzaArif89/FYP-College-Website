@@ -89,7 +89,7 @@ function CareersForm() {
   const handleClose = () => {
     setOpen(false);
     if (submitSuccess) {
-      navigate('/home'); // Redirect to success page or reset form
+      navigate('/'); // Redirect to success page or reset form
     }
   };
 

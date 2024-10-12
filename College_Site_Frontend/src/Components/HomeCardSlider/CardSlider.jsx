@@ -33,7 +33,7 @@ function CardSlider() {
 
   
   const slides = [];
-  events.slice(0,5).map(event => (
+  events.slice(0,6).map(event => (
     slides.push(
       <SwiperSlide className="eventSliderCard" key={event._id}>
      <img src={`http://localhost:5001/${event.img}`} alt="" className="eventPageCardImg" />

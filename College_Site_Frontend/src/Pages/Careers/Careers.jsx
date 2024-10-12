@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt, FaEnvelope, FaBuilding, FaInfoCircle, FaGraduationCap, FaRegListAlt } from 'react-icons/fa';
 import './careers.css';
-import axios from 'axios'
-
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
 
 function Careers() {
-    const [jobPostings, setJobPostings] = useState([])
-    useEffect(() => {
-        const getExamNews = async () => {
-            const res = await axios.get('http://localhost:5001/api/careers/getCareers');
-            setJobPostings(res.data.careers)
-        };
-        getExamNews();
+    const [jobPostings, setJobPostings] = useState([]);
+    const navigate = useNavigate(); // Initialize the useNavigate hook
 
+    useEffect(() => {
+        const getJobPostings = async () => {
+            const res = await axios.get('http://localhost:5001/api/careers/getCareers');
+            setJobPostings(res.data.careers);
+        };
+        getJobPostings();
     }, []);
+
+    const handleApplyClick = (jobId) => {
+        // Navigate to the job application form page, passing the job ID
+        navigate(`/careersForm`);
+    };
 
     return (
         <div className='careers'>
@@ -24,7 +30,7 @@ function Careers() {
                         <img src="/images/careerIcon.png" className='conTextImg' alt="" />
                     </div>
                     <div className="conTextDetail">
-                        Want to make a difference? HR @ GPCSF is creating a workplace where employees and the University bloom. We are striving to create and sustain a work environment that attracts, motivates, develops, rewards, and retains the highest caliber of staff. Whether you are currently part of the GPCSF faculty and staff community or are contemplating joining us, we ensure you have the best empowering experience at GPCSF. We bring together people from all over the world, We’re as dedicated to our employees' success as we are in modernizing for the future.
+                        Want to make a difference? HR @ GPCSF is creating a workplace where employees and the University bloom...
                     </div>
                 </div>
                 <div className="careersConImg"></div>
@@ -32,7 +38,7 @@ function Careers() {
 
             <div className="careersCon2">
                 <div className="careersCon2H1">
-                    Current Jobs Postings
+                    Current Job Postings
                     <img src="/images/careerIcon2.png" className='careersCon2H1Img' alt="" />
                 </div>
                 <div className="careersCon2H2">
@@ -44,7 +50,6 @@ function Careers() {
                             {job.jobTitle}
                         </div>
                         <div className="jobRow1 jobRow">
-
                             <div className="jobType jobCol">
                                 <div className="jobHeading">
                                     <FaBriefcase /> Job Type
@@ -82,11 +87,7 @@ function Careers() {
                             <div className="jobDescriptionHeading jobHeading">
                                 <FaInfoCircle /> Description
                             </div>
-
-                            <div
-                                className="jobDescriptionText jobHeadingText"
-                                dangerouslySetInnerHTML={{ __html: job.jobDescription }}
-                            />
+                            <div className="jobDescriptionText jobHeadingText" dangerouslySetInnerHTML={{ __html: job.jobDescription }} />
                         </div>
                         <div className="jobQualification">
                             <div className="jobQualificatonHeading jobHeading">
@@ -95,24 +96,19 @@ function Careers() {
                             <div className="jobQualificationText jobHeadingText">
                                 {job.jobQualification}
                             </div>
-                           
                         </div>
                         <div className="jobInstructions">
                             <div className="jobInstructionHeading jobHeading">
                                 <FaRegListAlt /> Instructions
                             </div>
-                            <div
-                                className="jobInstructionText jobHeadingText"
-                                dangerouslySetInnerHTML={{ __html: job.jobInstructions }}
-                            />
-
+                            <div className="jobInstructionText jobHeadingText" dangerouslySetInnerHTML={{ __html: job.jobInstructions }} />
                         </div>
-                        <div className="jobApplyBtn">Apply Now</div>
+                        <div className="jobApplyBtn" onClick={() => handleApplyClick(job._id)}>Apply Now</div> {/* Pass job ID to handleApplyClick */}
                     </div>
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Careers;

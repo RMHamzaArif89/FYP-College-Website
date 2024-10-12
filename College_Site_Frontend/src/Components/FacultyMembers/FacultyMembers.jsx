@@ -45,7 +45,7 @@ const FacultyMembers = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % facultyData.length);
-        }, 20000); // 10 seconds
+        }, 20000); // 20 seconds
 
         return () => clearInterval(interval);
     }, []);

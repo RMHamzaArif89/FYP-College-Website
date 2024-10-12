@@ -37,7 +37,7 @@ function Footer() {
           <li><NavLink to={'/admissionProcess'}>Admission Process</NavLink></li>
         </div>
         <div className="col22 col2">
-          <li>Complain Box</li>
+          {/* <li>Complain Box</li> */}
           <li><NavLink to='/programs'>Programs</NavLink></li>
           <li><NavLink to="/examNews">Exam News</NavLink></li>
           <li><NavLink to='https://drive.google.com/drive/folders/1HgH7fbNvelViMGgL_ZyBaGAyDtg3RYa3' target='blank'>Course Outline</NavLink></li>
